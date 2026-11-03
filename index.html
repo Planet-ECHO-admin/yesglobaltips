@@ -1,1 +1,1367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YES Global with TIPS Town · 청소년 글로벌 창업 프로그램</title>
+<meta name="description" content="제7의 멤버, AI 팀원과 함께 역삼 TIPS타운에서 13주 동안 스타트업을 실제로 운영하는 중·고등학생 영어 창업 프로그램. 2026년 12월 19일 개강.">
+<meta property="og:title" content="YES Global with TIPS Town">
+<meta property="og:description" content="AI 팀원과 함께 팁스타운에서 스타트업을 실제로 해 봅니다. 1기 모집 12월 5일 마감.">
+<meta property="og:type" content="website">
+<!-- og:image: 배포 도메인이 정해지면 1200x630 이미지의 절대 URL을 넣습니다 -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='22' fill='%235B2BB5'/%3E%3Cpath d='M22 16 L48 50 L48 86' fill='none' stroke='%23fff' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M48 50 L74 16' fill='none' stroke='%238EE3B5' stroke-width='12' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --ink:#1C1433; --text:#2E2845; --muted:#5D5878; --line:#E6E3EF;
+  --bg:#FFFFFF; --surface:#F6F4FA; --surface-2:#EEEAF6;
+  --primary:#5B2BB5; --primary-hover:#4A2196; --on-primary:#FFFFFF;
+  --green:#1E8A5A; --green-tint:#E7F4ED; --on-green:#FFFFFF;
+  --band:#1C1433; --on-band:#F4F1FA; --band-muted:#BDB5D6;
+  --error:#C2323A; --success:#1E8A5A;
+  --d-seed:#B8860B; --d-red:#C2323A; --d-green:#1E8A5A; --d-blue:#3B4EA9;
+  --r-sm:6px; --r-md:10px; --r-lg:16px;
+  --font:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  --maxw:1200px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) :is(.logos img,.tips img,.flogos img){background:#fff;border-radius:var(--r-sm);padding:4px 8px}
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ink:#F1EEF9; --text:#D8D3E8; --muted:#A8A2C2; --line:#2E2850;
+    --bg:#0F0C1D; --surface:#17132B; --surface-2:#211B3B;
+    --primary:#B9A0F5; --primary-hover:#CDBBF8; --on-primary:#140F26;
+    --green:#5CCB92; --green-tint:#15302A; --on-green:#0B1F17;
+    --band:#241B47; --on-band:#F4F1FA; --band-muted:#BDB5D6;
+    --error:#FF8A8D; --success:#5CCB92;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ink:#F1EEF9; --text:#D8D3E8; --muted:#A8A2C2; --line:#2E2850;
+  --bg:#0F0C1D; --surface:#17132B; --surface-2:#211B3B;
+  --primary:#B9A0F5; --primary-hover:#CDBBF8; --on-primary:#140F26;
+  --green:#5CCB92; --green-tint:#15302A; --on-green:#0B1F17;
+  --band:#241B47; --on-band:#F4F1FA; --band-muted:#BDB5D6;
+  --error:#FF8A8D; --success:#5CCB92;
+}
+:root[data-theme="dark"] :is(.logos img,.tips img,.flogos img){background:#fff;border-radius:var(--r-sm);padding:4px 8px}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{font-family:var(--font);color:var(--text);background:var(--bg);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:var(--primary);text-underline-offset:3px}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{color:var(--ink);font-weight:700;letter-spacing:-.01em}
+h1{font-size:52px;line-height:1.18}
+h2{font-size:40px;line-height:1.2}
+h3{font-size:24px;line-height:1.35;font-weight:600}
+.lead{font-size:20px;line-height:1.65;color:var(--muted);max-width:680px}
+.small{font-size:14px;line-height:1.6;color:var(--muted)}
+.label{font-size:13px;line-height:1.4;font-weight:600;color:var(--green)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+section{padding:128px 0}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--primary);color:var(--on-primary);padding:10px 16px;border-radius:var(--r-md);text-decoration:none;font-weight:600}
+.skip:focus{top:12px}
+.surface{background:var(--surface)}
+figure img{border-radius:var(--r-lg);width:100%;height:auto;object-fit:cover;background:var(--surface-2)}
+figcaption{font-size:14px;line-height:1.6;color:var(--muted);margin-top:10px}
 
+[data-en]{display:none!important}
+html[lang="en"] [data-en]{display:revert!important}
+html[lang="en"] [data-ko]{display:none!important}
+
+/* buttons */
+.btn{font:600 16px var(--font);border-radius:var(--r-md);border:0;cursor:pointer;padding:0 24px;height:48px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;white-space:nowrap}
+.btn-primary{background:var(--primary);color:var(--on-primary)}
+.btn-primary:hover{background:var(--primary-hover)}
+.btn-secondary{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-secondary:hover{background:var(--surface)}
+.btn-band{background:transparent;color:var(--on-band);border:1.5px solid var(--band-muted)}
+.btn-band:hover{border-color:var(--on-band)}
+.btn-sm{height:40px;padding:0 16px;font-size:14px}
+.quiet{font-weight:600;color:var(--primary)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+/* top */
+.announce{background:var(--band);color:var(--on-band);font-size:14px;text-align:center;padding:9px 16px}
+.announce a{color:var(--on-band);font-weight:600}
+.proto{background:var(--surface-2);color:var(--muted);font-size:12.5px;text-align:center;padding:5px 16px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand img{width:36px;height:40px;object-fit:contain}
+.brand b{display:block;white-space:nowrap;font-size:19px;line-height:1.1;font-weight:700}
+.brand small{display:block;font-size:12px;color:var(--muted);font-weight:500}
+.menu{display:flex;gap:2px;list-style:none}
+.menu > li{position:relative}
+.menu > li > button{background:none;border:0;font:600 15px var(--font);color:var(--ink);padding:0 14px;height:44px;border-radius:var(--r-md);cursor:pointer}
+.menu > li > button:hover,.menu > li > button[aria-expanded="true"]{background:var(--surface)}
+.menu > li > button::after{content:"";display:inline-block;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin:0 0 4px 9px}
+.mega{position:absolute;top:calc(100% + 8px);left:0;width:min(520px,90vw);background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:0 24px 64px rgba(14,10,30,.16);padding:10px}
+.mega[hidden]{display:none}
+.mega a{display:block;text-decoration:none;padding:12px 14px;border-radius:var(--r-md);color:var(--text)}
+.mega a:hover{background:var(--surface)}
+.mega a b{display:block;font-size:15px;color:var(--ink);font-weight:600;line-height:1.4}
+.mega a span{font-size:13.5px;color:var(--muted);line-height:1.5}
+.tools{display:flex;gap:10px;align-items:center}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--muted);font:600 12px var(--font);padding:0 12px;height:34px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:var(--r-md);color:var(--ink);font:600 14px var(--font);padding:0 14px;height:42px;cursor:pointer}
+
+/* hero */
+.hero{padding:72px 0 0}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+.hero h1{margin-bottom:24px}
+.hero .lead{margin-bottom:36px}
+.deadline{margin-top:20px;font-size:15px;color:var(--muted)}
+.deadline strong{color:var(--ink)}
+.hero figure img{aspect-ratio:4/5}
+.facts{margin-top:72px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:28px 24px 32px;border-left:1px solid var(--line)}
+.fact:first-child{border-left:0;padding-left:0}
+.fact dt{font-size:14px;color:var(--muted);margin-bottom:4px}
+.fact dd{font-size:18px;font-weight:600;color:var(--ink);line-height:1.5}
+.fact dd small{display:block;font-size:14px;font-weight:400;color:var(--muted);margin-top:2px}
+
+/* proof */
+.proof{padding:72px 0}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr) 1.4fr;gap:40px;align-items:end}
+.num b{display:block;font-size:64px;line-height:1;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.num b i{font-style:normal;color:var(--green)}
+.num span{display:block;margin-top:12px;font-size:15px;line-height:1.5;color:var(--muted)}
+.logos{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:flex-end}
+.logos a{display:block;border-radius:var(--r-sm)}
+.logos img{height:52px;width:auto}
+.proof-note{margin-top:36px;font-size:15px;color:var(--muted);max-width:760px}
+
+/* why */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.why h2{margin-bottom:40px}
+.ab{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.ab:last-child{border-bottom:1px solid var(--line)}
+.ab svg{width:28px;height:28px;color:var(--green);margin-top:4px}
+.ab h3{font-size:20px;margin-bottom:2px}
+.ab p{color:var(--muted);font-size:16.5px}
+.why figure img{aspect-ratio:4/5}
+
+/* money */
+.money{background:var(--band);color:var(--on-band)}
+.money h2{color:var(--on-band);max-width:14em;margin-bottom:20px}
+.money .lead{color:var(--band-muted)}
+.money-grid{margin-top:64px;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.flow{list-style:none}
+.flow li{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.14)}
+.flow li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.flow .tag{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;margin-top:3px}
+.flow h3{color:var(--on-band);font-size:19px;margin-bottom:2px}
+.flow p{color:var(--band-muted);font-size:15.5px}
+.ledger{background:#fff;border-radius:var(--r-lg);padding:24px 24px 18px;color:#1C1433}
+.ledger-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.ledger-head h3{color:#1C1433;font-size:17px}
+.ledger-head p{font-size:13px;color:#5D5878}
+.ledger svg{display:block;width:100%;height:auto}
+.ledger text{font-family:var(--font);font-size:11px;fill:#5D5878}
+.ledger .axis{stroke:#E6E3EF}
+.ledger .zero{stroke:#C2323A;stroke-width:1.3;stroke-dasharray:5 5}
+.ledger .zero-label,.ledger .bust{fill:#C2323A;font-weight:600}
+.ledger .teamA{fill:none;stroke:#5B2BB5;stroke-width:3.2;stroke-linejoin:round;stroke-linecap:round}
+.ledger .teamB{fill:none;stroke:#9A95AE;stroke-width:2;stroke-dasharray:4 5}
+.ledger .draw{stroke-dasharray:1200;stroke-dashoffset:1200}
+.ledger.go .draw{animation:draw 2.2s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.ledger .draw{stroke-dashoffset:0}}
+.ledger .mk circle{stroke:#fff;stroke-width:2.5}
+.ledger .mk text{fill:#fff;font-size:10.5px;font-weight:700;text-anchor:middle}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#5D5878;margin-top:6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.money-note{margin-top:56px;font-size:16px;color:var(--band-muted);max-width:760px}
+.money-note strong{color:var(--on-band);font-weight:600}
+
+.net-stats{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-bottom:48px;border-bottom:1px solid var(--line)}
+.net-how{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.net-how > div{padding:0 28px 0 0}
+.net-how > div + div{padding-left:28px;border-left:1px solid var(--line)}
+.net-how h3{font-size:19px;margin-bottom:8px}
+.net-how p{font-size:16px;color:var(--muted)}
+.regions{margin-top:72px;display:grid;grid-template-columns:200px 1fr;gap:16px 32px;border-top:2px solid var(--ink);padding-top:28px}
+.regions h3{font-size:18px}
+.regions dl > div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.regions dt{color:var(--ink);font-weight:600}
+.regions dd{color:var(--muted)}
+.regions .small{grid-column:2;margin-top:8px}
+/* journey */
+.ai-row{margin:56px 0 72px;display:grid;grid-template-columns:200px repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.ai-row > div{padding:24px 24px 0 0}
+.ai-row > div + div{padding-left:24px;border-left:1px solid var(--line)}
+.ai-row h3{font-size:18px;margin-bottom:6px}
+.ai-row p{font-size:15.5px;color:var(--muted)}
+.ai-row .ai-title{font-size:22px;font-weight:700;color:var(--ink);line-height:1.35}
+.tabs{display:flex;gap:28px;border-bottom:1px solid var(--line);margin-bottom:40px;overflow-x:auto}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;font:600 16px var(--font);color:var(--muted);padding:12px 0;cursor:pointer;white-space:nowrap;min-height:48px}
+.tabs button span.n{font-size:13px;font-weight:500;margin-left:6px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--primary)}
+.panel{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.panel[hidden]{display:none}
+.panel figure img{aspect-ratio:3/2}
+.panel h3{font-size:30px;margin:6px 0 14px}
+.panel p.body{color:var(--muted)}
+.out{margin-top:28px}
+.out h4{font-size:14px;color:var(--ink);margin-bottom:8px;font-weight:600}
+.out ul{list-style:none}
+.out li{padding:10px 0;border-top:1px solid var(--line);font-size:16px}
+.out li:last-child{border-bottom:1px solid var(--line)}
+.when-dates{margin-top:20px;font-size:14px;color:var(--muted)}
+
+/* photo band */
+.band-photos{padding:0 0 128px}
+.band-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}
+.band-grid figure img{aspect-ratio:3/2}
+
+/* people */
+.coach-grid{margin-top:56px;display:grid;grid-template-columns:repeat(5,1fr);gap:40px 24px}
+.mentors{margin-top:72px;display:grid;grid-template-columns:200px 1fr;gap:8px 32px;border-top:2px solid var(--ink);padding-top:28px}
+.mentors h3{font-size:18px}
+.mentors ul{list-style:none}
+.mentors li{display:grid;grid-template-columns:160px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.mentors li b{color:var(--ink);font-weight:600}
+.mentors li span{color:var(--muted)}
+.mentors .small{grid-column:2;margin-top:8px}
+.coach img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg);background:var(--surface-2)}
+.coach h3{font-size:18px;margin-top:16px}
+.coach .role{font-size:14px;font-weight:600;color:var(--green);line-height:1.4}
+.coach p{font-size:14px;line-height:1.6;color:var(--muted);margin-top:4px}
+.li-link{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:14px;font-weight:600;color:var(--primary);text-decoration:none;min-height:32px}
+.li-link:hover{text-decoration:underline}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tips{margin-top:72px;display:grid;grid-template-columns:1fr 1fr;gap:64px;padding-top:40px;border-top:2px solid var(--ink)}
+.tips h3{font-size:28px;line-height:1.3}
+.tips p{color:var(--muted)}
+.tips .addr{margin-top:16px;color:var(--ink);font-weight:600;font-size:16px}
+.tips .tips-logo{display:inline-block;margin-top:24px}
+.tips img{height:44px;width:auto}
+
+/* outcomes */
+.outcomes{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.outcomes h2{margin-bottom:16px}
+.out-list{list-style:none;margin-top:40px}
+.out-list li{display:grid;grid-template-columns:180px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.out-list li:last-child{border-bottom:1px solid var(--line)}
+.out-list b{color:var(--ink);font-weight:600}
+.out-list span{color:var(--muted);font-size:16px}
+.report{border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--bg)}
+.report-top{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.report-top h3{font-size:17px}
+.report-top span{font-size:13px;color:var(--muted)}
+.report dl{padding:6px 22px 10px}
+.rrow{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.rrow:last-child{border-bottom:0}
+.rrow dt{color:var(--muted)}
+.rrow dd{color:var(--ink)}
+.bar{height:6px;background:var(--surface-2);border-radius:3px;margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--green)}
+.report .small{padding:0 22px 18px}
+
+/* stories */
+.bigquote{max-width:920px}
+.bigquote blockquote{font-size:36px;line-height:1.45;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.bigquote blockquote::before{content:"“";display:block;font-size:72px;line-height:.8;color:var(--green);margin-bottom:12px}
+.bigquote cite,.quote cite{display:block;margin-top:18px;font-style:normal;font-size:15px;color:var(--muted)}
+.grp{font-size:20px;margin:64px 0 32px;padding-top:24px;border-top:2px solid var(--ink)}
+.quotes{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px 56px}
+.quotes.q3{margin-top:0;grid-template-columns:repeat(3,1fr)}
+.quotes.q3 blockquote{font-size:17px}
+.quote{border-top:1px solid var(--line);padding-top:24px}
+.quote blockquote{font-size:20px;line-height:1.6;color:var(--ink)}
+.orgs{margin-top:96px;display:grid;grid-template-columns:200px 1fr;gap:32px;border-top:2px solid var(--ink);padding-top:28px}
+.orgs h3{font-size:18px}
+.orgs ul{list-style:none;columns:3;column-gap:32px}
+.orgs li{font-size:15px;color:var(--text);padding:4px 0;break-inside:avoid}
+
+/* next */
+.path{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.step{padding:24px 24px 0 0;position:relative}
+.step::before{content:"";position:absolute;top:-1px;left:0;right:24px;height:3px;background:transparent}
+.step.now::before{background:var(--green)}
+.step h3{font-size:20px;margin:6px 0 4px}
+.step p{font-size:15.5px;color:var(--muted)}
+.ybs{margin-top:72px;display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center}
+.ybs figure img{aspect-ratio:1300/359}
+.ybs h3{margin-bottom:10px}
+.ybs p{color:var(--muted)}
+
+/* admissions */
+.how{margin-top:56px;list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:h;border-top:2px solid var(--ink)}
+.how li{counter-increment:h;padding:24px 24px 0 0}
+.how li + li{padding-left:24px;border-left:1px solid var(--line)}
+.how li::before{content:counter(h);display:block;font-size:40px;font-weight:700;color:var(--green);line-height:1;margin-bottom:14px}
+.how h3{font-size:19px;margin-bottom:4px}
+.how p{font-size:15.5px;color:var(--muted)}
+.how-cta{margin-top:40px}
+.adm{margin-top:112px;display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.price{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:36px}
+.price .amt{font-size:52px;line-height:1.1;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.price .amt small{font-size:20px;font-weight:600}
+.price .disc{margin-top:22px;padding-top:22px;border-top:1px solid var(--line)}
+.price .disc b{font-size:24px;color:var(--ink);font-weight:700}
+.price .disc .tag{display:inline-block;margin-left:8px;background:var(--green-tint);color:var(--green);font-size:13px;font-weight:600;padding:2px 8px;border-radius:var(--r-sm);vertical-align:middle}
+.price ul{margin:22px 0 28px 18px;color:var(--muted);font-size:15.5px}
+.faq h2{font-size:28px;margin-bottom:8px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:600;color:var(--ink);position:relative;font-size:17px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:28px;width:9px;height:9px;border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:32px}
+.faq details p{padding:0 0 20px;color:var(--muted);font-size:16px}
+
+/* parents & schools */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.sess{list-style:none;margin-top:32px}
+.sess li{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:20px 0;border-top:1px solid var(--line)}
+.sess li:last-child{border-bottom:1px solid var(--line)}
+.sess b{display:block;font-size:20px;color:var(--ink);font-weight:600}
+.sess span{font-size:15px;color:var(--muted)}
+.pkg{width:100%;border-collapse:collapse;margin-top:32px}
+.pkg th,.pkg td{text-align:left;vertical-align:top;padding:16px 16px 16px 0;border-top:1px solid var(--line);font-size:15px}
+.pkg th{width:132px;color:var(--ink);font-weight:600}
+.pkg td{color:var(--muted)}
+.pkg tr:last-child th,.pkg tr:last-child td{border-bottom:1px solid var(--line)}
+.two figure{margin-top:40px}
+.two figure img{aspect-ratio:953/265}
+
+/* final */
+.final{padding:0}
+.final-grid{display:grid;grid-template-columns:1fr 1fr;background:var(--band);color:var(--on-band)}
+.final-grid .txt{padding:96px 64px 96px max(32px,calc((100vw - var(--maxw))/2 + 32px))}
+.final h2{color:var(--on-band);margin-bottom:16px}
+.final p{color:var(--band-muted);font-size:18px;margin-bottom:32px}
+.final-grid img{width:100%;height:100%;object-fit:cover;min-height:420px}
+
+/* footer */
+footer{background:var(--surface);padding:72px 0 calc(120px + env(safe-area-inset-bottom,0px));font-size:15px;color:var(--muted)}
+.fcols{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.fcols h3{font-size:15px;margin-bottom:12px}
+.fcols ul{list-style:none}
+.fcols li{padding:3px 0}
+.fcols a{color:var(--muted);text-decoration:none}
+.fcols a:hover{color:var(--primary);text-decoration:underline}
+.flogos{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.flogos img{height:34px;width:auto}
+.orglinks{list-style:none;margin-top:14px}
+.orglinks li{padding:2px 0}
+.fbottom{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--bg);border-top:1px solid var(--line);padding:12px 0 calc(12px + env(safe-area-inset-bottom,0px));transform:translateY(110%);transition:transform .3s}
+.sticky.show{transform:none}
+.sticky .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.sticky p{font-size:15px;color:var(--muted)}
+.sticky p strong{color:var(--ink)}
+.sticky .b{display:flex;gap:8px}
+
+/* dialogs */
+dialog{border:0;border-radius:var(--r-lg);padding:0;width:min(640px,calc(100vw - 24px));max-height:calc(100vh - 32px);background:var(--bg);color:var(--text);box-shadow:0 24px 64px rgba(14,10,30,.24)}
+dialog::backdrop{background:rgba(14,10,30,.55)}
+.dlg-head{position:sticky;top:0;background:var(--bg);padding:22px 26px 14px;border-bottom:1px solid var(--line);z-index:2}
+.dlg-head h2{font-size:20px;line-height:1.4;padding-right:44px}
+.dlg-close{position:absolute;right:16px;top:16px;width:40px;height:40px;border-radius:var(--r-md);border:1px solid var(--line);background:var(--bg);color:var(--ink);font-size:20px;cursor:pointer}
+.progress{display:flex;gap:6px;margin-top:14px}
+.progress i{flex:1;height:4px;border-radius:2px;background:var(--surface-2)}
+.progress i.on{background:var(--primary)}
+.step-label{font-size:13px;color:var(--muted);margin-top:8px}
+.dlg-body{padding:22px 26px 8px;font-size:16px}
+.dlg-foot{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:16px 26px;display:flex;justify-content:space-between;gap:10px;z-index:2}
+.field{margin-bottom:18px}
+.field label,.field legend{display:block;font-weight:600;font-size:14px;color:var(--ink);margin-bottom:6px}
+.field .hint{font-size:13px;color:var(--muted);margin-top:4px}
+.req{color:var(--error)}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:16px var(--font);color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:var(--r-sm);padding:0 14px;height:48px}
+textarea{height:auto;min-height:100px;padding:12px 14px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--primary);outline-offset:0;border-color:var(--primary)}
+fieldset{border:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 14px;font-weight:400;font-size:15px;color:var(--text);cursor:pointer;min-height:44px}
+.opts input{accent-color:var(--primary);width:18px;height:18px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;margin-bottom:10px;color:var(--text);line-height:1.6}
+.check input{accent-color:var(--primary);width:20px;height:20px;margin-top:2px;flex:none}
+.notice{background:var(--surface);border-radius:var(--r-md);padding:14px 16px;font-size:13.5px;color:var(--muted);margin-bottom:14px;line-height:1.65}
+.notice ul{margin-left:18px}
+.err{color:var(--error);font-size:14px;margin-top:6px;min-height:1em}
+.sum{border:1px solid var(--line);border-radius:var(--r-md);padding:16px 18px;margin-bottom:16px}
+.sum div{display:flex;justify-content:space-between;padding:5px 0;font-size:15px}
+.sum .tot{border-top:1px solid var(--line);margin-top:6px;padding-top:12px;font-size:18px;font-weight:700;color:var(--ink)}
+.sum .minus{color:var(--success)}
+.code-row{display:flex;gap:8px}
+.code-row input{flex:1}
+.ok{color:var(--success);font-size:14px;margin-top:6px}
+.done{text-align:center;padding:20px 0 10px}
+.done .big{font-size:26px;font-weight:700;color:var(--ink);margin:12px 0}
+.done p{color:var(--muted)}
+.check-ic{width:64px;height:64px;border-radius:50%;background:var(--green);color:var(--on-green);display:inline-flex;align-items:center;justify-content:center}
+.tiny{font-size:13px;color:var(--muted);margin-top:16px}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+
+/* responsive */
+@media (max-width:1080px){
+  .menu{display:none}
+  .menu.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--bg);padding:12px 20px 20px;border-bottom:1px solid var(--line);max-height:calc(100vh - 140px);overflow:auto}
+  .menu.open > li > button{width:100%;text-align:left}
+  .mega{position:static;width:auto;box-shadow:none;border:0;padding:0 0 8px 8px}
+  .menu-btn{display:inline-block}
+  .coach-grid{grid-template-columns:repeat(3,1fr)}
+  .proof-grid{grid-template-columns:repeat(3,1fr)}
+  .logos{grid-column:1/-1;justify-content:flex-start}
+}
+@media (max-width:900px){
+  h1{font-size:40px} h2{font-size:32px}
+  section{padding:96px 0}
+  .hero-grid,.why,.money-grid,.panel,.tips,.outcomes,.ybs,.adm,.two,.final-grid{grid-template-columns:1fr;gap:48px}
+  .facts{grid-template-columns:1fr 1fr}
+  .fact:nth-child(3){border-left:0;padding-left:0}
+  .ai-row{grid-template-columns:1fr 1fr}
+  .ai-row > div:nth-child(3){padding-left:0;border-left:0}
+  .ai-row > div{padding-bottom:24px}
+  .band-grid{grid-template-columns:1fr 1fr}
+  .band-grid figure:nth-child(1){grid-column:1/-1}
+  .path,.how{grid-template-columns:1fr 1fr}
+  .how li:nth-child(3){padding-left:0;border-left:0}
+  .how li{padding-bottom:24px}
+  .orgs,.mentors,.regions{grid-template-columns:1fr}
+  .regions .small{grid-column:1}
+  .net-how{grid-template-columns:1fr;gap:28px}
+  .net-how > div + div{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:24px}
+  .mentors .small{grid-column:1}
+  .orgs ul{columns:2}
+  .quotes,.quotes.q3{grid-template-columns:1fr;gap:32px}
+  .bigquote blockquote{font-size:28px}
+  .final-grid .txt{padding:72px 32px}
+  .fcols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  h1{font-size:34px;line-height:1.22} h2{font-size:28px} h3{font-size:21px}
+  .lead{font-size:18px}
+  .wrap{padding:0 20px}
+  section{padding:72px 0}
+  .hero{padding-top:40px}
+  .hero figure img{aspect-ratio:4/3}
+  .tools .nav-apply{display:none}
+  .facts{grid-template-columns:1fr;margin-top:48px}
+  .fact{border-left:0;padding:18px 0;border-top:1px solid var(--line)}
+  .fact:first-child{border-top:0}
+  .num b{font-size:44px}
+  .proof-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .ai-row,.path,.how{grid-template-columns:1fr}
+  .ai-row > div + div,.how li + li{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .coach-grid{grid-template-columns:1fr 1fr;gap:20px}
+  .out-list li,.rrow,.mentors li,.regions dl > div{grid-template-columns:1fr;gap:2px}
+  .net-stats{grid-template-columns:1fr;gap:28px}
+  .orgs ul{columns:1}
+  .pkg th{width:96px}
+  .bigquote blockquote{font-size:24px}
+  .final-grid .txt{padding:56px 20px}
+  .final-grid img{min-height:260px}
+  .sticky p{display:none}
+  .sticky .b{width:100%}
+  .sticky .b .btn{flex:1}
+  .dlg-body,.dlg-head,.dlg-foot{padding-left:18px;padding-right:18px}
+  .fcols{grid-template-columns:1fr}
+  .band-photos{padding-bottom:72px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main"><span data-ko>본문으로 바로가기</span><span data-en>Skip to content</span></a>
+
+<div class="announce">
+  <span data-ko>YES Global 기초 1기 모집 중, 12월 5일(토) 마감 · <a href="#parents">학부모 설명회 11월 14일부터</a></span>
+  <span data-en>Basics Cohort 1 now enrolling, closes Sat, Dec 5 · <a href="#parents">Parent info sessions from Nov 14</a></span>
+</div>
+<div class="proto" role="note">
+  <span data-ko>시안 페이지입니다. 신청·결제는 실제로 처리되지 않으며, 입력한 정보는 저장되지 않습니다.</span>
+  <span data-en>Prototype page. Applications and payments are not processed, and nothing you type is saved.</span>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#main"><svg class="mark" width="36" height="36" viewBox="0 0 96 96" aria-hidden="true"><path d="M22 16 L48 50 L48 86" fill="none" stroke="var(--primary)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M48 50 L74 16" fill="none" stroke="var(--green)" stroke-width="12" stroke-linecap="round"/></svg><span><b>YES Global</b><small>with TIPS Town</small></span></a>
+    <ul class="menu" id="menu">
+      <li><button type="button" aria-expanded="false" aria-controls="m1"><span data-ko>프로그램</span><span data-en>Program</span></button>
+        <div class="mega" id="m1" hidden>
+          <a href="#program"><b><span data-ko>13주 여정</span><span data-en>The 13-week journey</span></b><span><span data-ko>아이디어에서 시제품, 매출, 투자 피칭까지</span><span data-en>Idea to prototype, revenue and investor pitch</span></span></a>
+          <a href="#money"><b><span data-ko>자금 흐름</span><span data-en>Money flow</span></b><span><span data-ko>시드머니, 대출, 투자, 매출, 그리고 파산</span><span data-en>Seed money, loans, investment, revenue, bankruptcy</span></span></a>
+          <a href="#ai"><b>AI Co-Pilot</b><span><span data-ko>TASK+PR, PIQ, 팀 AI 프로젝트</span><span data-en>TASK+PR, PIQ and your team AI project</span></span></a>
+          <a href="#next"><b><span data-ko>다음 과정·국제 대회</span><span data-en>Next courses &amp; competitions</span></b><span><span data-ko>심화, IP 비즈니스, 바이브 코딩, YBS 2027</span><span data-en>Advanced, IP Business, Vibe Coding, YBS 2027</span></span></a>
+        </div></li>
+      <li><button type="button" aria-expanded="false" aria-controls="m2"><span data-ko>입학 안내</span><span data-en>Admissions</span></button>
+        <div class="mega" id="m2" hidden>
+          <a href="#admissions"><b><span data-ko>신청 방법</span><span data-en>How to apply</span></b><span><span data-ko>온라인 4단계, 약 10분</span><span data-en>4 steps online, about 10 minutes</span></span></a>
+          <a href="#pricing"><b><span data-ko>수강료·할인</span><span data-en>Tuition &amp; discounts</span></b><span><span data-ko>220만 원, 대상자 20% 할인</span><span data-en>KRW 2.2M, 20% off for eligible students</span></span></a>
+          <a href="#faq"><b><span data-ko>자주 묻는 질문</span><span data-en>FAQ</span></b><span><span data-ko>영어 수준, 결석, 환불</span><span data-en>English level, absences, refunds</span></span></a>
+        </div></li>
+      <li><button type="button" aria-expanded="false" aria-controls="m3"><span data-ko>성과</span><span data-en>Outcomes</span></button>
+        <div class="mega" id="m3" hidden>
+          <a href="#outcomes"><b>Startup Portfolio Report</b><span><span data-ko>13주 후 손에 남는 기록</span><span data-en>The record you leave with</span></span></a>
+          <a href="#stories"><b><span data-ko>학생 이야기</span><span data-en>Student stories</span></b><span><span data-ko>한국과 미국 참여 학생의 말</span><span data-en>In their own words, from Korea and the U.S.</span></span></a>
+        </div></li>
+      <li><button type="button" aria-expanded="false" aria-controls="m4"><span data-ko>학부모·학교</span><span data-en>Parents &amp; schools</span></button>
+        <div class="mega" id="m4" hidden>
+          <a href="#parents"><b><span data-ko>학부모 설명회</span><span data-en>Parent info sessions</span></b><span><span data-ko>온라인 3회, 11월 14일부터</span><span data-en>3 online sessions from Nov 14</span></span></a>
+          <a href="#schools"><b><span data-ko>파트너 학교</span><span data-en>Partner schools</span></b><span><span data-ko>Partner·Sponsor·Premier 패키지</span><span data-en>Partner, Sponsor and Premier packages</span></span></a>
+        </div></li>
+      <li><button type="button" aria-expanded="false" aria-controls="m5"><span data-ko>소개</span><span data-en>About</span></button>
+        <div class="mega" id="m5" hidden>
+          <a href="#network"><b><span data-ko>YES Global과 PEN Worldwide</span><span data-en>YES Global &amp; PEN Worldwide</span></b><span><span data-ko>40개국 실습기업 네트워크</span><span data-en>A practice-enterprise network in 40 countries</span></span></a>
+          <a href="#people"><b><span data-ko>코치진·TIPS타운</span><span data-en>Coaches &amp; TIPS Town</span></b><span><span data-ko>창업가와 글로벌 비즈니스 전문가</span><span data-en>Founders and global business experts</span></span></a>
+          <a href="#contact"><b><span data-ko>문의</span><span data-en>Contact</span></b><span>info@koreapen.org</span></a>
+        </div></li>
+    </ul>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="lk" aria-pressed="true" onclick="setLang('ko')">KO</button>
+        <button type="button" id="le" aria-pressed="false" onclick="setLang('en')">EN</button>
+      </div>
+      <button type="button" class="btn btn-primary btn-sm nav-apply" onclick="openApply()"><span data-ko>신청하기</span><span data-en>Apply</span></button>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" onclick="toggleMenu()"><span data-ko>메뉴</span><span data-en>Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1 HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1><span data-ko>제7의 멤버, AI 팀원과 함께 팁스타운에서 스타트업을 실제로 해&nbsp;봅니다.</span><span data-en>With AI as your 7th teammate, run a real startup at TIPS Town.</span></h1>
+        <p class="lead"><span data-ko>13주 동안 매주 토요일 오전, 팀을 꾸려 시제품을 만들고 직접 판매해 본 뒤 투자자 앞에서 피칭합니다. 중·고등학생을 위한 영어 창업 프로그램입니다.</span><span data-en>Every Saturday morning for 13 weeks, you form a team, build a prototype, sell it, and pitch to investors. An English-language startup program for middle and high schoolers.</span></p>
+        <div class="actions">
+          <button type="button" class="btn btn-primary" onclick="openApply()"><span data-ko>1기 신청하기</span><span data-en>Apply for Cohort 1</span></button>
+          <a class="btn btn-secondary" href="#parents"><span data-ko>학부모 설명회 예약</span><span data-en>Book an info session</span></a>
+        </div>
+        <p class="deadline" id="deadline"></p>
+      </div>
+      <figure>
+        <img src="images/hero_p.jpg" alt="학생 팀이 국제 박람회에서 심사위원에게 자기 회사를 설명하는 모습" width="800" height="1000" fetchpriority="high">
+        <figcaption><span data-ko>PEN Worldwide 국제 실습기업 박람회</span><span data-en>PEN Worldwide international practice-enterprise fair</span></figcaption>
+      </figure>
+    </div>
+    <dl class="facts">
+      <div class="fact"><dt><span data-ko>일정</span><span data-en>Schedule</span></dt><dd><span data-ko>12월 19일(토) 개강</span><span data-en>Starts Sat, Dec 19, 2026</span><small><span data-ko>매주 토 09:30–12:30, 13회 40시간</span><span data-en>Saturdays 09:30–12:30, 13 sessions, 40 hrs</span></small></dd></div>
+      <div class="fact"><dt><span data-ko>장소</span><span data-en>Venue</span></dt><dd><span data-ko>역삼 TIPS타운</span><span data-en>TIPS Town, Seoul</span><small><span data-ko>한국엔젤투자협회, 전 회차 대면</span><span data-en>Korea Business Angels Association, in person</span></small></dd></div>
+      <div class="fact"><dt><span data-ko>대상</span><span data-en>Who</span></dt><dd><span data-ko>중·고등학생</span><span data-en>Middle &amp; high schoolers</span><small><span data-ko>영어 수업 참여 가능, 학교 밖 청소년 포함</span><span data-en>Able to study in English; out-of-school youth welcome</span></small></dd></div>
+      <div class="fact"><dt><span data-ko>수강료</span><span data-en>Tuition</span></dt><dd><span data-ko>220만 원</span><span data-en>KRW 2,200,000</span><small><span data-ko>파트너 학교·다문화가정 20% 할인</span><span data-en>VAT incl.; 20% off for eligible students</span></small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 2 PROOF -->
+<section class="proof surface" id="proof">
+  <div class="wrap">
+    <div class="proof-grid">
+      <div class="num"><b>40</b><span><span data-ko>PEN Worldwide 네트워크 국가</span><span data-en>Countries in the PEN Worldwide network</span></span></div>
+      <div class="num"><b>7,000<i>+</i></b><span><span data-ko>네트워크로 연결된 실습기업</span><span data-en>Practice enterprises connected</span></span></div>
+      <div class="num"><b>2016</b><span><span data-ko>국내 교육청·국제학교와 협력 시작</span><span data-en>Working with Korean schools since</span></span></div>
+      <div class="logos">
+        <a href="https://www.planetecho.xyz" target="_blank" rel="noopener"><img src="images/l_echo.png" alt="Planet E.C.H.O. 웹사이트 (새 창)" height="52"></a>
+        <a href="https://www.koreapen.org" target="_blank" rel="noopener"><img src="images/l_kpen.png" alt="KoreaPEN 웹사이트 (새 창)" height="52"></a>
+        <a href="https://www.penworldwide.org" target="_blank" rel="noopener"><img src="images/l_pen.png" alt="PEN Worldwide 웹사이트 (새 창)" height="52"></a>
+        <a href="https://www.kbaa.or.kr/" target="_blank" rel="noopener"><img src="images/l_kbaa.png" alt="한국엔젤투자협회 Korea Business Angels Association 웹사이트 (새 창)" height="52"></a>
+      </div>
+    </div>
+    <p class="proof-note"><span data-ko>유럽연합 집행위원회가 우수 창업 체험으로 인정한 실습기업(PE) 모델을, <a href="https://www.penworldwide.org" target="_blank" rel="noopener">PEN Worldwide</a> 한국본부 <a href="https://www.koreapen.org" target="_blank" rel="noopener">KoreaPEN</a>과 <a href="https://www.planetecho.xyz" target="_blank" rel="noopener">㈜플래닛에코</a>가 운영합니다.</span><span data-en>Built on the Practice Enterprise model, recognized by the European Commission as an excellent entrepreneurship experience, and run in Korea by <a href="https://www.koreapen.org" target="_blank" rel="noopener">KoreaPEN</a> and <a href="https://www.planetecho.xyz" target="_blank" rel="noopener">PlanetEcho</a>, members of <a href="https://www.penworldwide.org" target="_blank" rel="noopener">PEN Worldwide</a>.</span></p>
+  </div>
+</section>
+
+<!-- 3 WHY -->
+<section>
+  <div class="wrap why">
+    <div>
+      <h2><span data-ko>스스로 문제를 찾고, 직접 풀어 보고, 실패에서 다음 기회를 찾는 아이로.</span><span data-en>Find the problem. Build the solution. Turn setbacks into the next opportunity.</span></h2>
+      <div class="ab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <div><h3><span data-ko>자기주도</span><span data-en>Self-direction</span></h3><p><span data-ko>정해진 과제를 기다리지 않고, 팀이 풀 문제를 스스로 정하고 질문을 만듭니다.</span><span data-en>No assignments handed down. The team picks the problem worth solving and writes its own questions.</span></p></div></div>
+      <div class="ab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg>
+        <div><h3><span data-ko>문제해결</span><span data-en>Problem-solving</span></h3><p><span data-ko>아이디어를 시제품으로 만들고, 고객에게 팔아 보며 실제로 통하는 해결책인지 확인합니다.</span><span data-en>Turn an idea into a prototype, then sell it to find out whether it really works.</span></p></div></div>
+      <div class="ab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg>
+        <div><h3><span data-ko>실패에서 기회</span><span data-en>Resilience</span></h3><p><span data-ko>가설이 틀리고 자금이 바닥나도 끝이 아닙니다. 다시 설계하고, 다음 발표에서 증명합니다.</span><span data-en>When a hypothesis fails or money runs low, redesign and prove it at the next pitch.</span></p></div></div>
+    </div>
+    <figure>
+      <img src="images/g_table.jpg" alt="학생 팀이 코치와 함께 테이블에서 사업 계획을 논의하는 모습" width="516" height="342" loading="lazy" style="aspect-ratio:4/5">
+      <figcaption><span data-ko>국제 실습기업 행사의 팀 워크숍</span><span data-en>Team workshop at an international practice-enterprise event</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4 MONEY -->
+<section class="money" id="money">
+  <div class="wrap">
+    <h2><span data-ko>팔고, 벌고, 투자받고, 때로는 파산도 합니다.</span><span data-en>Sell. Earn. Raise funds. Sometimes, go bankrupt.</span></h2>
+    <p class="lead"><span data-ko>시드머니로 회사를 세우고, 대출을 받고, 투자를 유치하고, 매출로 회사를 키웁니다. 40개국 실습기업 네트워크에서 실제 스타트업의 자금 흐름을 그대로 경험합니다.</span><span data-en>Launch with seed money, take out loans, win investment and grow on revenue, experiencing a startup’s real money flow inside a practice-enterprise network of 40 countries.</span></p>
+    <div class="money-grid">
+      <ol class="flow">
+        <li><span class="tag" style="background:var(--d-seed)">S</span><div><h3><span data-ko>시드머니로 창업</span><span data-en>Seed money</span></h3><p><span data-ko>회사를 세우는 날 첫 자금을 받고, 매주 인건비와 운영비가 빠져나갑니다.</span><span data-en>Your first funds arrive on day one; salaries and costs go out every week.</span></p></div></li>
+        <li><span class="tag" style="background:var(--d-red)">R</span><div><h3><span data-ko>대출과 상환</span><span data-en>Loans</span></h3><p><span data-ko>자금이 부족하면 대출을 받고, 이자까지 갚을 계획을 세웁니다.</span><span data-en>Short on cash? Borrow, and plan how to repay it with interest.</span></p></div></li>
+        <li><span class="tag" style="background:var(--d-green)">G</span><div><h3><span data-ko>투자와 상금</span><span data-en>Investment</span></h3><p><span data-ko>ECHO Day 발표 성과에 따라 투자와 상금을 받습니다.</span><span data-en>Strong ECHO Day pitches win investment and prizes.</span></p></div></li>
+        <li><span class="tag" style="background:var(--d-blue)">B</span><div><h3><span data-ko>매출</span><span data-en>Revenue</span></h3><p><span data-ko>장터에서 다른 팀과 네트워크의 실습기업에 제품을 팔아 매출을 만듭니다.</span><span data-en>Sell to other teams and practice enterprises in the network at the Market.</span></p></div></li>
+      </ol>
+      <figure class="ledger" id="ledger" aria-labelledby="ledgerTitle">
+        <div class="ledger-head"><h3 id="ledgerTitle"><span data-ko>한 팀의 13주 자금 흐름</span><span data-en>One team’s money over 13 weeks</span></h3><p><span data-ko>예시 그래프</span><span data-en>Illustration</span></p></div>
+        <svg viewBox="0 0 540 290" role="img" aria-label="시드머니로 시작해 대출, 투자, 매출로 잔액이 움직이는 팀과, 잔액이 0원 아래로 떨어져 파산한 팀을 비교한 예시 그래프">
+          <line class="axis" x1="30" y1="250" x2="515" y2="250"/>
+          <line class="zero" x1="30" y1="232" x2="515" y2="232"/>
+          <text class="zero-label" x="36" y="246" data-ko>0원 아래면 파산</text>
+          <text class="zero-label" x="36" y="246" data-en>Below zero: bankrupt</text>
+          <polyline class="teamB draw" points="40,90 78,118 117,146 155,122 193,158 232,192 270,214 308,236"/>
+          <g><circle cx="308" cy="236" r="6" fill="#C2323A"/><text class="bust" x="320" y="228" data-ko>다른 팀: 파산</text><text class="bust" x="320" y="228" data-en>Another team: bankrupt</text></g>
+          <polyline class="teamA draw" points="40,90 78,110 117,130 155,100 193,122 232,146 270,104 308,118 347,104 385,92 423,80 462,70 500,46"/>
+          <g class="mk">
+            <circle cx="40" cy="90" r="12" fill="#B8860B"/><text x="40" y="94">S</text>
+            <circle cx="155" cy="100" r="12" fill="#C2323A"/><text x="155" y="104">R</text>
+            <circle cx="270" cy="104" r="12" fill="#1E8A5A"/><text x="270" y="108">G</text>
+            <circle cx="347" cy="104" r="12" fill="#3B4EA9"/><text x="347" y="108">B</text>
+            <circle cx="500" cy="46" r="12" fill="#1E8A5A"/><text x="500" y="50">G</text>
+          </g>
+          <text x="40" y="270" text-anchor="middle">S1</text><text x="155" y="270" text-anchor="middle">S4</text><text x="270" y="270" text-anchor="middle">S7</text><text x="385" y="270" text-anchor="middle">S10</text><text x="500" y="270" text-anchor="middle">S13</text>
+        </svg>
+        <figcaption class="legend">
+          <span><i class="dot" style="background:#B8860B"></i><span data-ko>시드머니</span><span data-en>Seed</span></span>
+          <span><i class="dot" style="background:#C2323A"></i><span data-ko>대출</span><span data-en>Loans</span></span>
+          <span><i class="dot" style="background:#1E8A5A"></i><span data-ko>투자·상금</span><span data-en>Investment</span></span>
+          <span><i class="dot" style="background:#3B4EA9"></i><span data-ko>매출</span><span data-en>Revenue</span></span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="money-note"><span data-ko><strong>팀 자금이 0원 아래로 떨어지면 파산입니다.</strong> 생존과 성장의 과정은 거래 기록과 함께 Startup Portfolio Report로 남습니다.</span><span data-en><strong>If your team’s balance falls below zero, you’re bankrupt.</strong> How you survived and grew is recorded in your Startup Portfolio Report.</span></p>
+  </div>
+</section>
+
+<!-- GLOBAL NETWORK -->
+<section id="network">
+  <div class="wrap">
+    <h2><span data-ko>PEN Worldwide, 40개국 모의창업기업의 세계 네트워크</span><span data-en>PEN Worldwide: a global network of practice enterprises in 40 countries</span></h2>
+    <p class="lead" style="margin-top:20px"><span data-ko><a href="https://penworldwide.org" target="_blank" rel="noopener">PEN Worldwide</a>는 실습기업(Practice Enterprise) 방식으로 비즈니스·창업 교육을 운영하는 세계 네트워크입니다. YES Global 팀이 세운 회사도 이 네트워크에 사업자등록을 하고, 다른 나라의 모의창업기업과 실제처럼 거래합니다.</span><span data-en><a href="https://penworldwide.org" target="_blank" rel="noopener">PEN Worldwide</a> is a global network that teaches business and entrepreneurship through the Practice Enterprise method. Each YES Global team registers its company in this network and trades with practice enterprises in other countries.</span></p>
+    <div class="net-stats">
+      <div class="num"><b>30<i>+</i></b><span><span data-ko>년의 운영 경험</span><span data-en>Years of experience</span></span></div>
+      <div class="num"><b>200,000<i>+</i></b><span><span data-ko>연간 참여자</span><span data-en>Trainees per year</span></span></div>
+      <div class="num"><b>35<i>+</i></b><span><span data-ko>매년 열리는 국제 행사</span><span data-en>International events each year</span></span></div>
+    </div>
+    <div class="net-how">
+      <div><h3><span data-ko>나라마다 있는 Central Office</span><span data-en>A Central Office in every country</span></h3><p><span data-ko>각 나라의 Central Office가 은행, 세무, 급여세, 통관, 사업자등록 같은 실제 경제 기능을 맡습니다. 한국에서는 PEN Worldwide 한국본부 <a href="https://www.koreapen.org" target="_blank" rel="noopener">KoreaPEN</a>이 이 역할을 합니다. 그래서 팀의 자금 흐름이 실제 회사처럼 움직입니다.</span><span data-en>Each country’s Central Office runs real economic services such as banking, taxes, payroll tax, customs and business registration. In Korea, this is <a href="https://www.koreapen.org" target="_blank" rel="noopener">KoreaPEN</a>, PEN Worldwide’s Korean headquarters, so your team’s money moves the way a real company’s does.</span></p></div>
+      <div><h3><span data-ko>국경을 넘는 거래</span><span data-en>Trading across borders</span></h3><p><span data-ko>7,000개가 넘는 모의창업기업이 서로 사고팝니다. 온라인 트레이딩과 국제 박람회에서 해외 기업과 영어로 영업하고 계약합니다.</span><span data-en>More than 7,000 practice enterprises buy from and sell to each other, so you sell and close deals in English with companies abroad, online and at international fairs.</span></p></div>
+      <div><h3><span data-ko>실제 기업과 연결</span><span data-en>Links to real companies</span></h3><p><span data-ko>실습기업은 실제 기업의 비즈니스 멘토와 협업하며, 회사가 어떻게 운영되는지 배우고 조언을 받습니다.</span><span data-en>Practice enterprises work with business mentors from real companies, who show how a business runs and share advice.</span></p></div>
+    </div>
+    <div class="regions">
+      <h3><span data-ko>회원국</span><span data-en>Member countries</span></h3>
+      <dl>
+        <div><dt><span data-ko>아시아</span><span data-en>Asia</span></dt><dd><span data-ko>한국, 중국, 말레이시아, 인도네시아, 튀르키예</span><span data-en>South Korea, China, Malaysia, Indonesia, Turkey</span></dd></div>
+        <div><dt><span data-ko>아메리카</span><span data-en>Americas</span></dt><dd><span data-ko>미국, 캐나다, 브라질, 칠레, 버뮤다</span><span data-en>USA, Canada, Brazil, Chile, Bermuda</span></dd></div>
+        <div><dt><span data-ko>유럽</span><span data-en>Europe</span></dt><dd><span data-ko>독일, 오스트리아, 이탈리아, 프랑스, 스페인, 네덜란드, 벨기에, 스위스, 스웨덴, 노르웨이, 덴마크, 핀란드, 포르투갈, 체코, 헝가리 등</span><span data-en>Germany, Austria, Italy, France, Spain, the Netherlands, Belgium, Switzerland, Sweden, Norway, Denmark, Finland, Portugal, Czech Republic, Hungary and more</span></dd></div>
+        <div><dt><span data-ko>아프리카</span><span data-en>Africa</span></dt><dd><span data-ko>모로코, 튀니지, 마다가스카르, 코트디부아르</span><span data-en>Morocco, Tunisia, Madagascar, Ivory Coast</span></dd></div>
+      </dl>
+      <p class="small"><span data-ko>출처: <a href="https://penworldwide.org" target="_blank" rel="noopener">PEN Worldwide</a> 공식 웹사이트. 전체 회원국 목록은 PEN Worldwide 웹사이트의 Locations에서 볼 수 있습니다.</span><span data-en>Source: the official <a href="https://penworldwide.org" target="_blank" rel="noopener">PEN Worldwide</a> website, where the full list is under Locations.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 JOURNEY -->
+<section id="program">
+  <div class="wrap">
+    <h2><span data-ko>아이디어에서 시제품, 매출, 투자 피칭까지.</span><span data-en>From idea to prototype, revenue and investor pitch.</span></h2>
+    <p class="lead" style="margin-top:20px"><span data-ko>13회를 다섯 단계로 나눴습니다. 각 단계의 산출물이 다음 단계의 재료가 됩니다.</span><span data-en>13 sessions in five phases. What you make in each phase feeds the next one.</span></p>
+
+    <div class="ai-row" id="ai">
+      <div><p class="ai-title"><span data-ko>모든 단계에 AI 팀원이 함께합니다</span><span data-en>Your AI teammate, in every phase</span></p></div>
+      <div><h3>TASK+PR</h3><p><span data-ko>Target·Action·Situation·Key conditions에 Persona·Reference까지, 실무자 수준의 지시문으로 AI와 일합니다.</span><span data-en>Target, Action, Situation, Key conditions, plus Persona and Reference: prompt the way professionals do.</span></p></div>
+      <div><h3><span data-ko>PIQ 평가</span><span data-en>PIQ feedback</span></h3><p><span data-ko>프롬프트를 5단계로 실시간 평가해 좋은 질문을 하는 힘이 얼마나 자랐는지 봅니다.</span><span data-en>Prompts are scored on 5 levels in real time, so you can see your questioning skills grow.</span></p></div>
+      <div><h3><span data-ko>팀 AI 프로젝트</span><span data-en>Team AI project</span></h3><p><span data-ko>팀마다 AI 팀원과 공유 저장소가 자동으로 만들어져, 누가 무엇을 했는지 함께 쌓입니다.</span><span data-en>Each team gets an AI teammate and a shared workspace, so everyone’s work builds up in one place.</span></p></div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="13주 여정">
+      <button type="button" role="tab" id="t1" aria-selected="true" aria-controls="p1"><span data-ko>팀빌딩</span><span data-en>Team building</span><span class="n">S1–3</span></button>
+      <button type="button" role="tab" id="t2" aria-selected="false" aria-controls="p2" tabindex="-1"><span data-ko>가설 수립</span><span data-en>Hypotheses</span><span class="n">S4–6</span></button>
+      <button type="button" role="tab" id="t3" aria-selected="false" aria-controls="p3" tabindex="-1"><span data-ko>프로토타입</span><span data-en>Prototype</span><span class="n">S7–9</span></button>
+      <button type="button" role="tab" id="t4" aria-selected="false" aria-controls="p4" tabindex="-1"><span data-ko>판매·마케팅</span><span data-en>Sales</span><span class="n">S10–12</span></button>
+      <button type="button" role="tab" id="t5" aria-selected="false" aria-controls="p5" tabindex="-1">Public ECHO Day<span class="n">S13</span></button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+      <figure><img src="images/g_coach.jpg" alt="국제 청소년 비즈니스 대회에서 코치와 학생 팀이 발표를 준비하는 모습" width="510" height="282"><figcaption><span data-ko>국제 청소년 비즈니스 대회 발표 준비</span><span data-en>Preparing a pitch at an international youth business competition</span></figcaption></figure>
+      <div><p class="label"><span data-ko>1단계 · 12/19, 12/26, 1/2</span><span data-en>Phase 1 · Dec 19, Dec 26, Jan 2</span></p>
+        <h3><span data-ko>오리엔테이션과 팀빌딩</span><span data-en>Orientation and team building</span></h3>
+        <p class="body"><span data-ko>AI Co-Pilot 기초를 익히고, 팀을 꾸리고, 시드머니 규칙을 배운 뒤 창업 아이디어를 쏟아냅니다.</span><span data-en>Meet your AI Co-Pilot, form teams, learn the seed-money rules and brainstorm ideas.</span></p>
+        <div class="out"><h4><span data-ko>남는 것</span><span data-en>You leave with</span></h4><ul>
+          <li><span data-ko>팀 캔버스: 다음 단계 가설 수립에 씁니다</span><span data-en>Team canvas, used to write your hypothesis next</span></li>
+          <li><span data-ko>첫 TASK+PR 프롬프트와 PIQ 시작점</span><span data-en>Your first TASK+PR prompt and PIQ baseline</span></li></ul></div></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+      <figure><img src="images/g_mentor.jpg" alt="멘토가 노트북 앞의 학생들에게 피드백을 주는 모습" width="272" height="342"><figcaption><span data-ko>멘토 피드백 세션</span><span data-en>Mentor feedback session</span></figcaption></figure>
+      <div><p class="label"><span data-ko>2단계 · 1/9, 1/16, 1/23</span><span data-en>Phase 2 · Jan 9, 16, 23</span></p>
+        <h3><span data-ko>시장 조사와 가설 수립</span><span data-en>Market research and hypotheses</span></h3>
+        <p class="body"><span data-ko>시장과 경쟁사를 분석하고, 가설 정의서를 쓰고, 린 캔버스로 핵심 가치를 정의합니다.</span><span data-en>Research the market and competitors, write a hypothesis brief and define your core value with the Lean Canvas.</span></p>
+        <div class="out"><h4><span data-ko>남는 것</span><span data-en>You leave with</span></h4><ul>
+          <li><span data-ko>가설 정의서</span><span data-en>Hypothesis brief</span></li>
+          <li><span data-ko>린 캔버스: 다음 단계 시제품의 설계도가 됩니다</span><span data-en>Lean Canvas, the blueprint for your prototype</span></li></ul></div></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+      <figure><img src="images/team.jpg" alt="학생들이 테이블 위의 시제품을 함께 들여다보는 모습" width="615" height="461"><figcaption><span data-ko>해외 실습기업 학생들의 제품 작업</span><span data-en>Practice-enterprise students working on a product</span></figcaption></figure>
+      <div><p class="label"><span data-ko>3단계 · 1/30, 2/13, 2/20 (2/6 설 연휴 휴강)</span><span data-en>Phase 3 · Jan 30, Feb 13, 20 (no class Feb 6)</span></p>
+        <h3><span data-ko>프로토타입 제작</span><span data-en>Prototype building</span></h3>
+        <p class="body"><span data-ko>AI 도구로 웹사이트와 상세페이지를 만들고, 피드백을 받아 알파버전을 개선합니다.</span><span data-en>Build websites and product pages with AI tools, then refine your alpha version with feedback.</span></p>
+        <div class="out"><h4><span data-ko>남는 것</span><span data-en>You leave with</span></h4><ul>
+          <li><span data-ko>시제품(웹사이트·상세페이지): 다음 단계 장터에서 팝니다</span><span data-en>Prototype (site and product page), sold at the Market next</span></li></ul></div></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+      <figure><img src="images/f_booth.jpg" alt="학생 팀이 부스에서 방문객에게 제품을 설명하는 모습" width="1198" height="856"><figcaption><span data-ko>2025 파주 모의창업 공유학교 페스티벌, HappyTails 팀 부스</span><span data-en>HappyTails team booth at the 2025 Paju ECHO Startup festival</span></figcaption></figure>
+      <div><p class="label"><span data-ko>4단계 · 2/27, 3/6, 3/13</span><span data-en>Phase 4 · Feb 27, Mar 6, 13</span></p>
+        <h3><span data-ko>마케팅과 세일즈 실전</span><span data-en>Marketing and sales in practice</span></h3>
+        <p class="body"><span data-ko>장터에서 판매자와 구매자 역할을 번갈아 맡고, 매출을 만들고, 고객 반응(VOC)을 분석해 Pitch Deck을 만듭니다.</span><span data-en>Take turns selling and buying at the Market, earn revenue, analyze customer feedback and build your pitch deck.</span></p>
+        <div class="out"><h4><span data-ko>남는 것</span><span data-en>You leave with</span></h4><ul>
+          <li><span data-ko>매출·거래 기록과 VOC 분석</span><span data-en>Revenue, trade records and feedback analysis</span></li>
+          <li><span data-ko>영문 Pitch Deck: 마지막 피칭에 씁니다</span><span data-en>English pitch deck, used at the final pitch</span></li></ul></div></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+      <figure><img src="images/f_harness.jpg" alt="학생이 무대에서 자기 팀 제품을 투자자들에게 피칭하는 모습" width="1006" height="666"><figcaption><span data-ko>2025 파주 모의창업 공유학교 페스티벌, 무대 피칭</span><span data-en>On-stage pitch at the 2025 Paju ECHO Startup festival</span></figcaption></figure>
+      <div><p class="label"><span data-ko>5단계 · 3/20 (4시간)</span><span data-en>Phase 5 · Mar 20 (4 hours)</span></p>
+        <h3>Public ECHO Day</h3>
+        <p class="body"><span data-ko>TIPS타운에서 TIPS 참여 스타트업 대표와 투자 전문가 앞에 서서 모의투자 피칭을 하고, 시상과 함께 수료합니다.</span><span data-en>Pitch in person at TIPS Town to TIPS startup CEOs and investment experts, then celebrate with awards and graduation.</span></p>
+        <div class="out"><h4><span data-ko>남는 것</span><span data-en>You leave with</span></h4><ul>
+          <li><span data-ko>PEN Worldwide 국제 수료증</span><span data-en>PEN Worldwide international certificate</span></li>
+          <li>Startup Portfolio Report</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 PHOTO BAND -->
+<div class="band-photos">
+  <div class="wrap band-grid">
+    <figure><img src="images/f_metrics.jpg" alt="학생 두 명이 핵심 지표 슬라이드를 띄우고 영어로 발표하는 모습" width="1200" height="796" loading="lazy"><figcaption><span data-ko>2025 파주 모의창업 공유학교 페스티벌, 영어 피칭</span><span data-en>English pitch at the 2025 Paju ECHO Startup festival</span></figcaption></figure>
+    <figure><img src="images/f_consult.jpg" alt="부스에서 학생들이 방문객과 상담하는 모습" width="518" height="331" loading="lazy"><figcaption><span data-ko>페스티벌 부스의 투자 상담</span><span data-en>Investor conversation at a festival booth</span></figcaption></figure>
+    <figure><img src="images/f_leader.jpg" alt="학생이 무대에서 리더십을 주제로 성장 사례를 발표하는 모습" width="1200" height="769" loading="lazy"><figcaption><span data-ko>2025 파주 꿈함성 공유학교 성장나눔발표회, 학생 사례 발표</span><span data-en>Student story talk at the 2025 Paju showcase</span></figcaption></figure>
+  </div>
+</div>
+
+<!-- 7 PEOPLE -->
+<section class="surface" id="people">
+  <div class="wrap">
+    <h2><span data-ko>창업가와 글로벌 비즈니스 전문가가 코칭합니다.</span><span data-en>Coached by founders and global business experts.</span></h2>
+    <p class="lead" style="margin-top:20px"><span data-ko>외국인 창업가를 포함한 현직 창업가와 글로벌 비즈니스·교육 전문가가 모든 팀을 코칭하고, 한국과 미국의 투자 전문가와 TIPS 참여 스타트업 대표가 주요 발표에서 멘토링합니다.</span><span data-en>Startup founders, including foreign founders, and global business and education experts coach every team. Investment experts from Korea and the U.S. and TIPS startup CEOs mentor teams at major presentations.</span></p>
+    <div class="coach-grid">
+      <div class="coach"><img src="images/c_tuya.jpg" alt="Tuya" width="222" height="222" loading="lazy"><h3>Tuya</h3><p class="role">Lead Coach</p><p><span data-ko>KoreaPEN 프로젝트 매니저</span><span data-en>Project Manager, KoreaPEN</span></p></div>
+      <div class="coach"><img src="images/c_maeva.jpg" alt="Maeva" width="222" height="222" loading="lazy"><h3>Maeva</h3><p class="role">Youth Leadership Coach</p><p><span data-ko>EPOCHA 창업자·CEO</span><span data-en>Founder &amp; CEO, EPOCHA</span></p></div>
+      <div class="coach"><img src="images/c_sado.jpg" alt="Sado Park" width="222" height="222" loading="lazy"><h3>Sado Park</h3><p class="role">Global Business Coach</p><p><span data-ko>TARA International 창업자·CEO</span><span data-en>Founder &amp; CEO, TARA International</span></p></div>
+      <div class="coach"><img src="images/c_mj.jpg" alt="김민정 Minjung Kim" width="222" height="222" loading="lazy"><h3><span data-ko>김민정</span><span data-en>Minjung Kim</span></h3><p class="role">Global Business Expert</p><p><span data-ko>KoreaPEN 설립자·CEO, 플래닛에코 대표, 캐롤라인대학교 이사</span><span data-en>Founder &amp; CEO, KoreaPEN; CEO, PlanetEcho; Board Member, Caroline University</span></p><a class="li-link" href="https://www.linkedin.com/in/mjkimkoreapen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg><span data-ko>LinkedIn 프로필</span><span data-en>LinkedIn profile</span><span class="sr"> (김민정, 새 창)</span></a></div>
+      <div class="coach"><img src="images/c_kk.jpg" alt="강경림 Kyunglim Kang" width="222" height="222" loading="lazy"><h3><span data-ko>강경림</span><span data-en>Kyunglim Kang</span></h3><p class="role">Business Coach</p><p><span data-ko>플래닛에코 부사장, 전 코스닥 상장사 CFO</span><span data-en>Vice President, PlanetEcho; former CFO of a KOSDAQ-listed company</span></p></div>
+      <div class="coach"><img src="images/c_jek.jpg" alt="김정은 Jeongeun Kim" width="440" height="550" loading="lazy"><h3><span data-ko>김정은</span><span data-en>Jeongeun Kim</span></h3><p class="role">ECHO Startup Coach</p><p><span data-ko>한국노벨과학포럼 제1기 과학전문위원, 前 미국해양기상청(NOAA) 선임연구원, 한국코치협회 인증코치(KAC)</span><span data-en>Science Committee Member, Korea Nobel Science Forum (1st cohort); former Senior Researcher, NOAA (U.S.); KAC-certified coach</span></p></div>
+      <div class="coach"><img src="images/c_yk.jpg" alt="Youngkyu Kim" width="206" height="206" loading="lazy"><h3>Youngkyu Kim</h3><p class="role">Global Startup Coach</p><p><span data-ko>Catallyze 파트너·한국 총괄, 한국과 해외를 잇는 스타트업 생태계 구축</span><span data-en>Partner and Korea Country Manager, Catallyze; builds cross-border startup ecosystems</span></p><a class="li-link" href="https://www.linkedin.com/in/youngkyu-kim-6ba30616" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg><span data-ko>LinkedIn 프로필</span><span data-en>LinkedIn profile</span><span class="sr"> (Youngkyu Kim, 새 창)</span></a></div>
+      <div class="coach"><img src="images/c_nils.jpg" alt="Nils Peschke" width="420" height="420" loading="lazy"><h3>Nils Peschke</h3><p class="role">Global Education Expert</p><p><span data-ko>독일 브레멘주 아동교육부 진로교육 국제화 담당, 유럽학교 교사 경력 20년 이상</span><span data-en>International career education, Senator for Children and Education, Bremen, Germany; 20+ years as a European school teacher</span></p><a class="li-link" href="https://www.linkedin.com/in/nils-peschke-087447336" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg><span data-ko>LinkedIn 프로필</span><span data-en>LinkedIn profile</span><span class="sr"> (Nils Peschke, 새 창)</span></a></div>
+      <div class="coach"><img src="images/c_mk.jpg" alt="Michael K. Kim" width="440" height="550" loading="lazy"><h3>Michael K. Kim</h3><p class="role">Investment Mentor</p><p><span data-ko>JIK Investments LLC(미국) CEO, 前 MetLife·Deloitte &amp; Touche·Coopers &amp; Lybrand 임원</span><span data-en>CEO, JIK Investments LLC (U.S.); former executive at MetLife, Deloitte &amp; Touche and Coopers &amp; Lybrand</span></p></div>
+    </div>
+    <div class="mentors">
+      <h3><span data-ko>투자 자문 멘토</span><span data-en>Investment advisory mentors</span></h3>
+      <ul>
+        <li><b><span data-ko>박석준</span><span data-en>Seokjun Park</span></b><span><span data-ko>㈜아이디샘 회장 (前 ㈜한샘 대표)</span><span data-en>Chairman, IDSAM Co., Ltd. (former CEO, Hanssem)</span></span></li>
+        <li><b><span data-ko>정준경</span><span data-en>Joonkyung Jung</span></b><span><span data-ko>㈜아이디샘 대표 (前 IBM CFO, 한국마이크로소프트 CFO)</span><span data-en>CEO, IDSAM Co., Ltd. (former CFO, IBM; former CFO, Microsoft Korea)</span></span></li>
+        <li><b><span data-ko>오윤택</span><span data-en>Yuntaek Oh</span></b><span><span data-ko>㈜아이디샘 고문 (前 E&amp;Y 부회장)</span><span data-en>Advisor, IDSAM Co., Ltd. (former Vice Chairman, E&amp;Y)</span></span></li>
+        <li><b>Michael K. Kim</b><span><span data-ko>JIK Investments LLC(미국) CEO</span><span data-en>CEO, JIK Investments LLC (U.S.)</span></span></li>
+      </ul>
+      <p class="small"><span data-ko>아이디샘과 JIK Investments는 한국과 미국의 투자 컨설팅 회사입니다.</span><span data-en>IDSAM and JIK Investments are investment consulting firms in Korea and the U.S.</span></p>
+    </div>
+    <div class="tips">
+      <h3><span data-ko>창업 현장 한가운데, 역삼 TIPS타운에서 배웁니다.</span><span data-en>Learn in the middle of Seoul’s startup scene, at TIPS Town.</span></h3>
+      <div>
+        <p><span data-ko>TIPS(Tech Incubator Program for Startup)는 민간 투자와 정부 지원을 연계해 기술 창업을 키우는 사업으로, <a href="https://www.kbaa.or.kr/" target="_blank" rel="noopener">한국엔젤투자협회</a>가 운영사 관리부터 평가까지 총괄합니다. 투자 현장의 창업가들이 우리 팀의 사업을 직접 들여다봅니다.</span><span data-en>TIPS (Tech Incubator Program for Startup) pairs private investment with government support to grow tech startups, overseen end to end by the <a href="https://www.kbaa.or.kr/" target="_blank" rel="noopener">Korea Business Angels Association</a>. Founders from Korea’s investment scene look closely at your team’s business.</span></p>
+        <p class="addr"><span data-ko>서울 강남구 역삼동, 한국엔젤투자협회 TIPS타운</span><span data-en>TIPS Town, Yeoksam-dong, Gangnam-gu, Seoul</span></p>
+        <a class="tips-logo" href="https://www.kbaa.or.kr/" target="_blank" rel="noopener"><img src="images/l_kbaa.png" alt="한국엔젤투자협회 웹사이트 (새 창)" height="44" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 OUTCOMES -->
+<section id="outcomes">
+  <div class="wrap outcomes">
+    <div>
+      <h2><span data-ko>13주 후, 손에 남는 것.</span><span data-en>What you leave with after 13 weeks.</span></h2>
+      <p class="lead"><span data-ko>지원서와 에세이에 그대로 쓸 수 있는 구체적인 기록입니다.</span><span data-en>Concrete records you can use in applications and essays.</span></p>
+      <ul class="out-list">
+        <li><b><span data-ko>가설 정의서·린 캔버스</span><span data-en>Hypothesis &amp; Lean Canvas</span></b><span><span data-ko>어떤 문제를 왜 풀기로 했는지</span><span data-en>What problem you chose, and why</span></span></li>
+        <li><b><span data-ko>시제품</span><span data-en>Prototype</span></b><span><span data-ko>AI 도구로 직접 만든 웹사이트와 상세페이지</span><span data-en>A website and product page you built with AI tools</span></span></li>
+        <li><b><span data-ko>영문 Pitch Deck</span><span data-en>English pitch deck</span></b><span><span data-ko>Public ECHO Day 피칭 자료와 발표 영상</span><span data-en>Your Public ECHO Day deck and pitch video</span></span></li>
+        <li><b>Startup Portfolio Report</b><span><span data-ko>자금 흐름, 거래 기록, VOC, 내 역할과 PIQ 성장, 코치 확인</span><span data-en>Money flow, trades, feedback, your role and PIQ growth, coach sign-off</span></span></li>
+        <li><b><span data-ko>국제 수료증</span><span data-en>Certificate</span></b><span><span data-ko>PEN Worldwide 국제 수료증</span><span data-en>PEN Worldwide international certificate</span></span></li>
+      </ul>
+    </div>
+    <figure class="report" aria-label="Startup Portfolio Report 샘플">
+      <div class="report-top"><h3>Startup Portfolio Report</h3><span><span data-ko>샘플</span><span data-en>Sample</span></span></div>
+      <dl>
+        <div class="rrow"><dt><span data-ko>회사·직책</span><span data-en>Company, role</span></dt><dd><span data-ko>[팀 회사명], CFO</span><span data-en>[Team company], CFO</span></dd></div>
+        <div class="rrow"><dt><span data-ko>자금 흐름</span><span data-en>Money flow</span></dt><dd><span data-ko>시드 → 대출 1회 상환 완료 → 투자 유치 → 매출, 13주 생존</span><span data-en>Seed → 1 loan repaid → investment → revenue; survived 13 weeks</span></dd></div>
+        <div class="rrow"><dt><span data-ko>거래 기록</span><span data-en>Trades</span></dt><dd><span data-ko>[판매 건수], 거래 상대: 타 팀, 해외 실습기업</span><span data-en>[Number of sales] with other teams and overseas practice firms</span></dd></div>
+        <div class="rrow"><dt><span data-ko>고객 반응</span><span data-en>Feedback</span></dt><dd><span data-ko>인터뷰 [n]건, 가격·메시지 피벗 1회</span><span data-en>[n] interviews; 1 pivot on price and message</span></dd></div>
+        <div class="rrow"><dt><span data-ko>PIQ 성장</span><span data-en>PIQ growth</span></dt><dd><span data-ko>1회차 → 13회차</span><span data-en>Session 1 → Session 13</span><div class="bar" aria-hidden="true"><i style="width:68%"></i></div></dd></div>
+        <div class="rrow"><dt><span data-ko>코치 확인</span><span data-en>Coach sign-off</span></dt><dd><span data-ko>코치 코멘트·서명</span><span data-en>Coach comments and signature</span></dd></div>
+      </dl>
+      <figcaption class="small"><span data-ko>가상의 팀 데이터로 만든 예시이며, 대괄호 안은 실제 리포트에서 채워집니다.</span><span data-en>Illustration with a made-up team. Bracketed items are filled in on real reports.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 9 STORIES -->
+<section class="surface" id="stories">
+  <div class="wrap">
+    <h2><span data-ko>참여 학생과 학부모의 소감</span><span data-en>In their own words: students and parents</span></h2>
+    <h3 class="grp"><span data-ko>한국과 미국 참여 학생의 소감</span><span data-en>Students in Korea and the U.S.</span></h3>
+    <figure class="bigquote">
+      <blockquote><span data-ko>이 모의창업이라는 프로그램이 단순한 비즈니스가 아닌, 미래를 위한 적금처럼 느껴졌습니다.</span><span data-en>This ECHO Startup program was more than a business exercise. It felt like putting money away for my future.</span></blockquote>
+      <cite><span data-ko>ECHO Startup 참여 학생, 고등학교 2학년, CFO</span><span data-en>ECHO Startup student, Grade 11, CFO</span></cite>
+    </figure>
+    <div class="quotes q3" style="margin-top:56px">
+      <figure class="quote"><blockquote><span data-ko>“모든 역할을 잘해야 성장하는 것이 아니라, 나에게 맞는 역할을 알아가는 과정이 진짜 성장이라는 것을 배웠다.”</span><span data-en>“You don’t have to be great at every role to grow. Discovering the role that fits me was the real growth.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 고등학교 2학년 (기초 CMO, 심화 CEO)</span><span data-en>Paju ECHO Startup student, Grade 11 (CMO in Basics, CEO in Advanced)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“이전에는 외국인과 말하는 상황 자체가 긴장되고 부담스러웠지만, 이제는 생각을 전달하고 소통하는 데 있어 국적이나 언어가 큰 장벽이 아니라는 것을 깨닫게 되었다.”</span><span data-en>“Talking with people from other countries used to make me nervous. Now I know nationality and language aren’t big barriers to sharing ideas.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 고등학교 1학년</span><span data-en>Paju ECHO Startup student, Grade 10</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“실패가 끝이 아니라, 정답에 가까워지기 위해 반드시 필요한 데이터를 얻는 과정임을 가르쳐 주었습니다.”</span><span data-en>“It taught me that failure isn’t the end. It’s how you collect the data you need to get closer to the answer.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 고등학교 2학년</span><span data-en>Paju ECHO Startup student, Grade 11</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“성장은 정답을 맞히는 데서 오는 것이 아니라, 생각의 틀을 깨고 질문을 확장하는 데서 시작된다.”</span><span data-en>“Growth doesn’t come from getting the right answer. It starts when you break your own frame and widen your questions.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 고등학교 2학년</span><span data-en>Paju ECHO Startup student, Grade 11</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“생각이 실행을 만나는 순간, 비로소 가치를 지니게 된다.”</span><span data-en>“An idea only becomes valuable the moment it meets action.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 고등학교 1학년</span><span data-en>Paju ECHO Startup student, Grade 10</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“혼자서는 할 수 없는 일도 함께라면 해낼 수 있다는 것을 배웠다.”</span><span data-en>“I learned that what you can’t do alone, you can do together.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 중학교 1학년</span><span data-en>Paju ECHO Startup student, Grade 7</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“더 이상 정해진 답을 찾기만 하는 사람이 아니라, 스스로 질문을 만들고 해답을 모색하는 사람이 되고자 다짐하게 되었다.”</span><span data-en>“I no longer want to just look for the right answer. I want to ask my own questions and find my own answers.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 고등학교 2학년</span><span data-en>Paju ECHO Startup student, Grade 11</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“발표를 두려움의 대상으로만 여기기보다는, 내 생각을 논리적이고 차분하게 전달할 수 있는 기회로 받아들이게 되었다.”</span><span data-en>“I used to dread presenting. Now I see it as a chance to share my ideas clearly and calmly.”</span></blockquote><cite><span data-ko>파주 꿈함성 공유학교 모의창업 참여 학생, 고등학교 1학년</span><span data-en>Paju ECHO Startup student, Grade 10</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“비즈니스 세계가 어떻게 돌아가는지 보고 나니, 대학에서 무엇을 공부하고 싶은지 더 분명해졌습니다.”</span><span data-en>“Now that I’ve seen how business really works, I have a much clearer idea of what I want to study in college.”</span></blockquote><cite><span data-ko>미국 VE(Virtual Enterprise) 참여 학생</span><span data-en>U.S. Virtual Enterprise participant</span></cite></figure>
+    </div>
+
+    <h3 class="grp"><span data-ko>Public ECHO Day에 참석한 학부모의 소감</span><span data-en>Parents at Public ECHO Day</span></h3>
+    <div class="quotes q3">
+      <figure class="quote"><blockquote><span data-ko>“너무 좋은 내용입니다. 아이들이라 미숙한 부분도 있지만, 지금부터 이러한 사업적 고민들을 경험할 수 있다는 것이 매우 좋은 교육이라고 생각합니다.”</span><span data-en>“Wonderful content. They’re still young and some parts were rough, but experiencing these business questions now is excellent education.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“짧은 기간에 학생들이 이 정도의 결과물을 만들어낸 것이 대단합니다.”</span><span data-en>“It’s impressive that students produced results like this in such a short time.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“학생들이 전문가의 조언을 들으면서 모의 창업 세계를 경험할 수 있어서 감사합니다.”</span><span data-en>“I’m grateful the students could experience the world of startups while hearing advice from experts.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“AI 시대에 창업은 중요한 기회입니다. 이와 같은 교육은 정말 중요합니다. 보다 확대된 기회를 주고, 교육을 더 많이 지원해 주면 좋겠습니다.”</span><span data-en>“In the age of AI, starting a business is an important opportunity, and education like this really matters. I hope there will be more chances and more support for it.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“좋은 프로그램에 참석할 수 있어서 감사했습니다. 일회성 프로그램이 아니라 청소년들이 꾸준히 해 나갈 수 있는 교육적 상황이 조성되었으면 좋겠습니다.”</span><span data-en>“Thank you for a great program. I hope it becomes something young people can keep doing, not a one-off.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“후속으로 진행되는 연계 프로그램이 있었으면 합니다.”</span><span data-en>“I hope there will be a follow-up program to continue from here.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“창업을 위해 많은 고민을 하고 투자자를 유치하기 위해 프로젝트를 열심히 준비한 친구들에게, 앞으로도 피드백과 보완을 통해 꾸준한 발전이 있길 바랍니다.”</span><span data-en>“To the students who thought hard about their startups and worked to win investors: I hope you keep growing through feedback and improvement.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+      <figure class="quote"><blockquote><span data-ko>“학생들이 많이 고민하고 결과로 이끌어내며 성장의 시간을 보낸 것 같아 기특합니다. 진심으로 응원합니다.”</span><span data-en>“The students thought hard, turned it into results and grew along the way. I’m proud of them and cheering them on.”</span></blockquote><cite><span data-ko>참석 학부모</span><span data-en>Parent (translated from Korean)</span></cite></figure>
+    </div>
+    <div class="orgs">
+      <h3><span data-ko>2016년부터 함께한 기관</span><span data-en>Working with us since 2016</span></h3>
+      <ul>
+        <li><span data-ko>교육부</span><span data-en>Ministry of Education</span></li>
+        <li><span data-ko>한국직업능력연구원</span><span data-en>KRIVET</span></li>
+        <li><span data-ko>한국청년기업가정신재단</span><span data-en>Korea Youth Entrepreneurship Foundation</span></li>
+        <li><span data-ko>경기도교육청</span><span data-en>Gyeonggi Provincial Office of Education</span></li>
+        <li><span data-ko>제주특별자치도교육청</span><span data-en>Jeju Office of Education</span></li>
+        <li><span data-ko>충청남도교육청</span><span data-en>Chungcheongnam-do Office of Education</span></li>
+        <li><span data-ko>전라북도교육청</span><span data-en>Jeonbuk Office of Education</span></li>
+        <li><span data-ko>고양·파주·수원·화성오산교육지원청</span><span data-en>Goyang, Paju, Suwon, Hwaseong-Osan offices</span></li>
+        <li><span data-ko>서울외국인학교</span><span data-en>Seoul Foreign School</span></li>
+        <li><span data-ko>경기 수원외국인학교</span><span data-en>Gyeonggi Suwon International School</span></li>
+        <li><span data-ko>브랭섬홀아시아</span><span data-en>Branksome Hall Asia</span></li>
+        <li>Seoul Scholars International</li>
+        <li><span data-ko>전국 20여 개 고등학교</span><span data-en>20+ high schools nationwide</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 10 NEXT -->
+<section id="next">
+  <div class="wrap">
+    <h2><span data-ko>기초를 마치면, 다음 무대로.</span><span data-en>Finish Basics, then go further.</span></h2>
+    <div class="path">
+      <div class="step now"><p class="label"><span data-ko>지금 모집</span><span data-en>Now enrolling</span></p><h3><span data-ko>기초</span><span data-en>Basics</span></h3><p><span data-ko>아이디어에서 MVP까지</span><span data-en>Idea to MVP</span></p></div>
+      <div class="step"><p class="label"><span data-ko>다음 과정</span><span data-en>Next</span></p><h3><span data-ko>심화</span><span data-en>Advanced</span></h3><p><span data-ko>마케팅 실험으로 PMF 검증, IR Deck</span><span data-en>Marketing experiments, PMF, IR deck</span></p></div>
+      <div class="step"><p class="label">PRO</p><h3><span data-ko>IP 비즈니스·바이브 코딩</span><span data-en>IP Business, Vibe Coding</span></h3><p><span data-ko>한·미 특허 출원 실습, 작동하는 베타 서비스</span><span data-en>KR and U.S. filing practice, a working beta</span></p></div>
+      <div class="step"><p class="label"><span data-ko>국제 무대</span><span data-en>Global stage</span></p><h3><span data-ko>국제 대회</span><span data-en>Competitions</span></h3><p><span data-ko>미국, 독일, 한국 등에서 매년 열리는 대회</span><span data-en>Held every year in the U.S., Germany, Korea and more</span></p></div>
+    </div>
+    <div class="ybs">
+      <figure><img src="images/ybs.jpg" alt="Youth Business Summit 2027 안내 이미지와 뉴욕 박람회 현장 사진" width="1300" height="359" loading="lazy"><figcaption><span data-ko>Youth Business Summit, 뉴욕</span><span data-en>Youth Business Summit, New York</span></figcaption></figure>
+      <div><h3><a href="https://veinternational.org/2027-youth-business-summit/" target="_blank" rel="noopener">Youth Business Summit 2027</a></h3>
+        <p><span data-ko>Youth Business Summit을 주최하는 <a href="https://veinternational.org/" target="_blank" rel="noopener">VEI(Virtual Enterprises International)</a>는 YES Global 주관기관인 ㈜플래닛에코·코리아펜(KoreaPEN)의 미국 파트너입니다. 2027년 4월 13~15일, 뉴욕 Jacob Javits Convention Center. 이 밖에 독일 국제 PE Fair(매년 11월), 세계청소년비즈니스올림피아드(2027년 10월 충남 예정) 등 매년 35개의 국제 대회가 열립니다.</span><span data-en>The summit is hosted by <a href="https://veinternational.org/" target="_blank" rel="noopener">VEI (Virtual Enterprises International)</a>, the U.S. partner of PlanetEcho and KoreaPEN, which run YES Global. April 13–15, 2027 at the Jacob Javits Convention Center, New York. Plus Germany’s International PE Fair (every November), the World Youth Business Olympiad (Oct 2027 in Chungcheongnam-do, planned) and 35 more competitions each year.</span></p>
+        <p style="margin-top:16px"><a class="quiet" href="https://veinternational.org/2027-youth-business-summit/" target="_blank" rel="noopener"><span data-ko>YBS 2027 공식 안내 보기 (VE International, 새 창)</span><span data-en>See the official YBS 2027 page (VE International, new tab)</span></a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 ADMISSIONS -->
+<section class="surface" id="admissions">
+  <div class="wrap">
+    <h2><span data-ko>입학 안내</span><span data-en>Admissions</span></h2>
+    <p class="lead" style="margin-top:20px"><span data-ko>온라인으로 약 10분이면 끝납니다. 보호자께서 시작하고, 사전설문은 학생이 직접 답합니다.</span><span data-en>About 10 minutes online. A parent starts it; the student answers the pre-survey.</span></p>
+    <ol class="how">
+      <li><h3><span data-ko>보호자 정보</span><span data-en>Parent details</span></h3><p><span data-ko>연락처와 거주 지역을 입력합니다.</span><span data-en>Contact details and where you live.</span></p></li>
+      <li><h3><span data-ko>학생 정보·동의</span><span data-en>Student &amp; consent</span></h3><p><span data-ko>학년과 학교, 법정대리인 동의를 받습니다.</span><span data-en>Grade, school and guardian consent.</span></p></li>
+      <li><h3><span data-ko>사전설문</span><span data-en>Pre-survey</span></h3><p><span data-ko>영어 수준과 관심 분야로 팀을 편성합니다.</span><span data-en>English level and interests, used to form teams.</span></p></li>
+      <li><h3><span data-ko>결제</span><span data-en>Payment</span></h3><p><span data-ko>할인 코드를 입력하고 결제합니다.</span><span data-en>Enter a discount code and pay.</span></p></li>
+    </ol>
+    <div class="how-cta"><button type="button" class="btn btn-primary" onclick="openApply()"><span data-ko>신청 시작하기</span><span data-en>Start your application</span></button></div>
+
+    <div class="adm" id="pricing">
+      <div class="price">
+        <p class="small"><span data-ko>YES Global 기초 1기 수강료</span><span data-en>Basics Cohort 1 tuition</span></p>
+        <p class="amt"><span data-ko>220만 <small>원</small></span><span data-en>KRW 2,200,000</span></p>
+        <p class="small"><span data-ko>1인, 13회 40시간</span><span data-en>Per student, VAT incl.; 13 sessions, 40 hours</span></p>
+        <div class="disc"><p><b><span data-ko>176만 원</span><span data-en>KRW 1,760,000</span></b><span class="tag">20%</span></p>
+          <p class="small"><span data-ko>파트너 학교 학생·다문화가정 자녀</span><span data-en>Partner-school students and children from multicultural families</span></p></div>
+        <ul>
+          <li><span data-ko>강좌가 개설되지 않으면 100% 환불합니다.</span><span data-en>100% refund if the course does not open.</span></li>
+          <li><span data-ko>할인 코드는 결제 단계에서 입력합니다.</span><span data-en>Enter your discount code at checkout.</span></li>
+        </ul>
+        <button type="button" class="btn btn-primary" onclick="openApply()"><span data-ko>신청하기</span><span data-en>Apply</span></button>
+      </div>
+      <div class="faq" id="faq">
+        <h2><span data-ko>자주 묻는 질문</span><span data-en>FAQ</span></h2>
+        <details><summary><span data-ko>영어를 얼마나 잘해야 하나요?</span><span data-en>How good does my English need to be?</span></summary><p><span data-ko>영어로 수업에 참여하고 팀원과 대화할 수 있으면 됩니다. 사전설문으로 수준을 확인하고, 팀 안에서 역할을 나눠 서로 보완하도록 편성합니다.</span><span data-en>You need to follow class and talk with teammates in English. The pre-survey checks your level, and teams are formed so members can support each other.</span></p></details>
+        <details><summary><span data-ko>실제 돈이 오가나요?</span><span data-en>Is real money involved?</span></summary><p><span data-ko>실제 현금은 오가지 않습니다. 시드머니·대출·투자·매출 모두 실제 스타트업과 같은 규칙으로 운영되는 자금이라, 파산하더라도 실제 손실 없이 마음껏 시도하고 배울 수 있습니다.</span><span data-en>No real cash changes hands. Seed money, loans, investment and revenue follow the same rules as a real startup, so you can take risks and learn without real losses.</span></p></details>
+        <details><summary><span data-ko>결석하면 어떻게 하나요?</span><span data-en>What if I miss a session?</span></summary><p><span data-ko>팀 AI 프로젝트에 회차별 자료가 쌓여 있어 따라잡을 수 있습니다. 세부 보완 방법은 개강 전에 안내합니다.</span><span data-en>Each session’s work is saved in your team’s AI project so you can catch up. Details are shared before the course starts.</span></p></details>
+        <details><summary><span data-ko>강좌가 열리지 않으면요?</span><span data-en>What if the course doesn’t open?</span></summary><p><span data-ko>결제 금액 전액을 결제한 수단으로 환불하고, 메일과 문자로 안내합니다. 개인 사유에 따른 환불 기준은 신청 전에 약관에서 확인할 수 있습니다.</span><span data-en>You get a full refund to your original payment method, with notice by email and text. Refund terms for personal reasons are in the terms you see before applying.</span></p></details>
+        <details><summary><span data-ko>대학 지원에 어떻게 활용하나요?</span><span data-en>How can this help with college applications?</span></summary><p><span data-ko>Startup Portfolio Report에는 직책, 자금 흐름, 거래 기록, 고객 반응, 코치 확인이 담겨 있어 활동 기술과 에세이에 쓸 구체적인 근거가 됩니다.</span><span data-en>Your Startup Portfolio Report records your role, money flow, trades, customer feedback and coach sign-off: specific material for activity lists and essays.</span></p></details>
+        <details><summary><span data-ko>할인은 누가 받을 수 있나요?</span><span data-en>Who gets the discount?</span></summary><p><span data-ko>파트너 학교 학생과 다문화가정 자녀가 20% 할인을 받습니다. 파트너 학교 학생은 학교에서 받은 코드를, 다문화가정은 확인 후 운영팀이 발급한 코드를 입력합니다. 할인은 한 가지만 적용됩니다.</span><span data-en>Partner-school students and children from multicultural families get 20% off. Use the code from your school, or the one our team sends after checking eligibility. Only one discount applies.</span></p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 PARENTS & SCHOOLS -->
+<section>
+  <div class="wrap two">
+    <div id="parents">
+      <h2><span data-ko>학부모 설명회</span><span data-en>Parent info sessions</span></h2>
+      <p class="lead" style="margin-top:16px"><span data-ko>온라인 50분. 프로그램 소개, 지난 기수 사례, Portfolio Report 샘플을 보여드리고 질문에 답합니다.</span><span data-en>50 minutes online: the program, past student stories and a sample Portfolio Report, then your questions.</span></p>
+      <ul class="sess">
+        <li><div><b><span data-ko>11월 14일 (토) 10:00</span><span data-en>Sat, Nov 14, 10:00 KST</span></b><span><span data-ko>영어 진행 · 50분</span><span data-en>In English · 50 min</span></span></div><button type="button" class="btn btn-secondary btn-sm" onclick="openSession('s1')"><span data-ko>예약</span><span data-en>Book</span></button></li>
+        <li><div><b><span data-ko>11월 18일 (수) 20:30</span><span data-en>Wed, Nov 18, 20:30 KST</span></b><span><span data-ko>한국어 진행 · 50분</span><span data-en>In Korean · 50 min</span></span></div><button type="button" class="btn btn-secondary btn-sm" onclick="openSession('s2')"><span data-ko>예약</span><span data-en>Book</span></button></li>
+        <li><div><b><span data-ko>11월 21일 (토) 10:00</span><span data-en>Sat, Nov 21, 10:00 KST</span></b><span><span data-ko>영어 진행 · 50분</span><span data-en>In English · 50 min</span></span></div><button type="button" class="btn btn-secondary btn-sm" onclick="openSession('s3')"><span data-ko>예약</span><span data-en>Book</span></button></li>
+      </ul>
+    </div>
+    <div id="schools">
+      <h2><span data-ko>파트너 학교</span><span data-en>Partner schools</span></h2>
+      <p class="lead" style="margin-top:16px"><span data-ko>학생 할인은 모든 패키지에서 20%로 같고, 학교가 얻는 혜택과 참여 범위가 다릅니다.</span><span data-en>Students get 20% off under every package; what your school receives and commits to differs.</span></p>
+      <table class="pkg">
+        <tbody>
+          <tr><th scope="row">Partner</th><td><span data-ko>학생·학부모 안내 / 학교 전용 할인 코드, 파트너 학교 목록 게재, 교사 1명 Public ECHO Day 초청</span><span data-en>Share with families / school code, partner listing, 1 teacher invited to Public ECHO Day</span></td></tr>
+          <tr><th scope="row">Sponsor</th><td><span data-ko>단체 참여, 교내 설명회 장소 제공 / Partner 혜택, 학교 전용 설명회, 수업 참관, 학교별 성과 요약</span><span data-en>Group enrollment, host a session / Partner benefits, school-only session, class observation, results summary</span></td></tr>
+          <tr><th scope="row">Premier Sponsor</th><td><span data-ko>장학 좌석 후원 / Sponsor 혜택, Public ECHO Day 학교명 특별상, 로고 노출, 교원 연수 연계</span><span data-en>Scholarship seats / Sponsor benefits, named award, logo placement, teacher-training options</span></td></tr>
+        </tbody>
+      </table>
+      <div class="actions" style="margin-top:28px"><button type="button" class="btn btn-primary" onclick="openPartner()"><span data-ko>파트너 학교 신청</span><span data-en>Apply as a partner school</span></button><span class="small"><span data-ko>3영업일 안에 연락드립니다.</span><span data-en>We reply within 3 business days.</span></span></div>
+      <figure><img src="images/events.jpg" alt="2026 경기도교육청 창업교육 선도교원 연수와 수원 모의투자 발표회 사진" width="953" height="265" loading="lazy"><figcaption><span data-ko>2026 경기도교육청 창업교육 선도교원 연수, 수원 E:음 공유학교 모의투자 발표회</span><span data-en>2026 Gyeonggi teacher training and the Suwon ECHO Startup investment pitch</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 13 FINAL -->
+<section class="final">
+  <div class="final-grid">
+    <div class="txt">
+      <h2><span data-ko>1기 정원 36명, 12월 5일(토) 마감.</span><span data-en>Cohort 1: 36 seats. Applications close Sat, Dec 5.</span></h2>
+      <p><span data-ko>12월 19일, TIPS타운에서 첫 팀 회의가 시작됩니다.</span><span data-en>Your team’s first meeting is at TIPS Town on December 19.</span></p>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" onclick="openApply()" style="background:#fff;color:#1C1433"><span data-ko>1기 신청하기</span><span data-en>Apply for Cohort 1</span></button>
+        <a class="btn btn-band" href="#parents"><span data-ko>설명회 먼저 듣기</span><span data-en>Join an info session first</span></a>
+      </div>
+    </div>
+    <img src="images/f_award.jpg" alt="" width="1144" height="797" loading="lazy" style="object-position:50% 40%">
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="fcols">
+      <div><h3>YES Global with TIPS Town</h3>
+        <p><span data-ko>㈜플래닛에코 · 펜월드와이드협회 한국본부(KoreaPEN)</span><span data-en>PlanetEcho Co., Ltd. and KoreaPEN (PEN Worldwide Korea)</span></p>
+        <p><a href="mailto:info@koreapen.org">info@koreapen.org</a> · <a href="tel:+8223238523">02-323-8523</a></p>
+        <ul class="orglinks"><li><a href="https://www.planetecho.xyz" target="_blank" rel="noopener">www.planetecho.xyz</a></li><li><a href="https://www.koreapen.org" target="_blank" rel="noopener">www.koreapen.org</a></li><li><a href="https://www.penworldwide.org" target="_blank" rel="noopener">www.penworldwide.org</a></li><li><a href="https://www.kbaa.or.kr/" target="_blank" rel="noopener">www.kbaa.or.kr</a></li></ul>
+        <div class="flogos"><a href="https://www.planetecho.xyz" target="_blank" rel="noopener"><img src="images/l_echo.png" alt="Planet E.C.H.O. 웹사이트 (새 창)" height="34" loading="lazy"></a><a href="https://www.koreapen.org" target="_blank" rel="noopener"><img src="images/l_kpen.png" alt="KoreaPEN 웹사이트 (새 창)" height="34" loading="lazy"></a><a href="https://www.penworldwide.org" target="_blank" rel="noopener"><img src="images/l_pen.png" alt="PEN Worldwide 웹사이트 (새 창)" height="34" loading="lazy"></a><a href="https://www.kbaa.or.kr/" target="_blank" rel="noopener"><img src="images/l_kbaa.png" alt="한국엔젤투자협회 웹사이트 (새 창)" height="34" loading="lazy"></a></div></div>
+      <div><h3><span data-ko>프로그램</span><span data-en>Program</span></h3><ul>
+        <li><a href="#program"><span data-ko>13주 여정</span><span data-en>13-week journey</span></a></li>
+        <li><a href="#money"><span data-ko>자금 흐름</span><span data-en>Money flow</span></a></li>
+        <li><a href="#ai">AI Co-Pilot</a></li>
+        <li><a href="#people"><span data-ko>코치진</span><span data-en>Coaches</span></a></li></ul></div>
+      <div><h3><span data-ko>입학 안내</span><span data-en>Admissions</span></h3><ul>
+        <li><a href="#admissions"><span data-ko>신청 방법</span><span data-en>How to apply</span></a></li>
+        <li><a href="#pricing"><span data-ko>수강료·할인</span><span data-en>Tuition</span></a></li>
+        <li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h3><span data-ko>함께하기</span><span data-en>Get involved</span></h3><ul>
+        <li><a href="#parents"><span data-ko>학부모 설명회</span><span data-en>Info sessions</span></a></li>
+        <li><a href="#schools"><span data-ko>파트너 학교</span><span data-en>Partner schools</span></a></li>
+        <li><a href="#stories"><span data-ko>학생 이야기</span><span data-en>Student stories</span></a></li></ul></div>
+    </div>
+    <p class="fbottom"><span data-ko>환불 규정 · 개인정보 처리방침 · 이용약관 (준비 중)</span><span data-en>Refund policy, privacy policy and terms (coming soon)</span></p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="wrap">
+    <p id="stickyText"></p>
+    <div class="b">
+      <a class="btn btn-ghost btn-sm" href="#parents" tabindex="-1"><span data-ko>설명회 예약</span><span data-en>Info session</span></a>
+      <button type="button" class="btn btn-primary btn-sm" onclick="openApply()" tabindex="-1"><span data-ko>신청하기</span><span data-en>Apply</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- APPLY DIALOG -->
+<dialog id="applyDlg" aria-labelledby="applyTitle">
+  <form method="dialog" id="applyForm" novalidate onsubmit="return false">
+    <div class="dlg-head">
+      <h2 id="applyTitle"><span data-ko>YES Global 기초 1기 신청</span><span data-en>Apply to YES Global Basics, Cohort 1</span></h2>
+      <button type="button" class="dlg-close" aria-label="닫기" onclick="closeDlg('applyDlg')">×</button>
+      <div class="progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="step-label" id="stepLabel" aria-live="polite"></p>
+    </div>
+
+    <div class="dlg-body">
+      <!-- step 1 -->
+      <div class="astep" data-step="1">
+        <p class="notice"><span data-ko>신청은 보호자(학부모)께서 진행해 주세요. 학생 정보는 다음 단계에서 보호자 동의와 함께 받습니다.</span><span data-en>A parent or guardian should complete this application. Student details come next, with guardian consent.</span></p>
+        <div class="field"><label for="pName"><span data-ko>보호자 성함</span><span data-en>Parent/guardian name</span> <span class="req">*</span></label><input type="text" id="pName" autocomplete="name" required></div>
+        <div class="field"><label for="pEmail"><span data-ko>이메일</span><span data-en>Email</span> <span class="req">*</span></label><input type="email" id="pEmail" autocomplete="email" required></div>
+        <div class="field"><label for="pPhone"><span data-ko>휴대폰</span><span data-en>Mobile</span> <span class="req">*</span></label><input type="tel" id="pPhone" autocomplete="tel" required data-ph-ko="010-0000-0000" data-ph-en="+82 10 0000 0000"></div>
+        <fieldset class="field"><legend><span data-ko>거주 지역</span><span data-en>Where do you live?</span></legend>
+          <div class="opts"><label><input type="radio" name="region" value="kr" checked><span data-ko>국내</span><span data-en>Korea</span></label><label><input type="radio" name="region" value="intl"><span data-ko>해외</span><span data-en>Outside Korea</span></label></div></fieldset>
+        <p class="err" id="err1" role="alert"></p>
+      </div>
+
+      <!-- step 2 -->
+      <div class="astep" data-step="2" hidden>
+        <div class="field"><label for="sName"><span data-ko>학생 이름 (국문)</span><span data-en>Student name</span> <span class="req">*</span></label><input type="text" id="sName" required></div>
+        <div class="field"><label for="sNameEn"><span data-ko>학생 영문 이름 (수료증 표기)</span><span data-en>Name for the certificate (English)</span> <span class="req">*</span></label><input type="text" id="sNameEn" required data-ph-ko="Gildong Hong" data-ph-en="Gildong Hong"></div>
+        <div class="field"><label for="sGrade"><span data-ko>학년</span><span data-en>Grade</span> <span class="req">*</span></label>
+          <select id="sGrade" required onchange="toggleSchool()"></select></div>
+        <div class="field" id="schoolField"><label for="sSchool"><span data-ko>재학 중인 학교</span><span data-en>Current school</span> <span class="req">*</span></label><input type="text" id="sSchool">
+          <p class="hint"><span data-ko>파트너 학교 학생은 결제 단계에서 학교 할인 코드를 입력하세요.</span><span data-en>Partner-school students: enter your school’s code at checkout.</span></p></div>
+        <div class="notice"><ul>
+          <li><span data-ko>수집 항목: 학생 이름(국·영문), 학년, 학교, 사전설문 응답</span><span data-en>We collect: student name, grade, school and pre-survey answers</span></li>
+          <li><span data-ko>목적: 수업 운영, 팀 편성, 수료증 발급</span><span data-en>Why: running classes, forming teams, issuing certificates</span></li>
+          <li><span data-ko>보유 기간: 과정 종료 후 [보유 기간 확정 필요]</span><span data-en>Kept for: [retention period to be confirmed] after the course</span></li>
+          <li><span data-ko>열람·정정·삭제 요청: info@koreapen.org</span><span data-en>To see, correct or delete: info@koreapen.org</span></li></ul></div>
+        <label class="check"><input type="checkbox" id="c1" required><span><span data-ko>[필수] 학생 개인정보 수집·이용에 동의합니다.</span><span data-en>[Required] I agree to the collection and use of my child’s personal information.</span></span></label>
+        <label class="check"><input type="checkbox" id="c2" required><span><span data-ko>[필수] 학생의 법정대리인(보호자)으로서 위 내용에 동의합니다.</span><span data-en>[Required] I consent as the student’s parent or legal guardian.</span></span></label>
+        <label class="check"><input type="checkbox" id="c3"><span><span data-ko>[선택] 수업 중 촬영한 사진·영상을 프로그램 홍보에 사용하는 데 동의합니다.</span><span data-en>[Optional] Photos and videos from class may be used to promote the program.</span></span></label>
+        <p class="err" id="err2" role="alert"></p>
+      </div>
+
+      <!-- step 3 -->
+      <div class="astep" data-step="3" hidden>
+        <p class="notice"><span data-ko>학생이 직접 답해 주세요. 팀 편성에 쓰이며, 점수로 합격을 정하지 않습니다.</span><span data-en>To be answered by the student. Used to form teams, not to grade you.</span></p>
+        <fieldset class="field"><legend><span data-ko>영어로 수업을 따라가는 정도</span><span data-en>How comfortable are you learning in English?</span> <span class="req">*</span></legend>
+          <div class="opts" id="engOpts"></div></fieldset>
+        <fieldset class="field"><legend><span data-ko>AI 도구(ChatGPT, Claude 등) 사용 빈도</span><span data-en>How often do you use AI tools?</span></legend>
+          <div class="opts" id="aiOpts"></div></fieldset>
+        <fieldset class="field"><legend><span data-ko>관심 분야 (여러 개 선택)</span><span data-en>Interests (choose any)</span></legend>
+          <div class="opts" id="intOpts"></div></fieldset>
+        <div class="field"><label for="motive"><span data-ko>참가하고 싶은 이유를 영어로 2~3문장 써 주세요</span><span data-en>In 2–3 sentences, why do you want to join?</span> <span class="req">*</span></label><textarea id="motive" required></textarea></div>
+        <fieldset class="field"><legend><span data-ko>수업에 가져올 노트북이 있나요?</span><span data-en>Can you bring a laptop?</span></legend>
+          <div class="opts"><label><input type="radio" name="laptop" value="y" checked><span data-ko>있음</span><span data-en>Yes</span></label><label><input type="radio" name="laptop" value="n"><span data-ko>없음</span><span data-en>No</span></label></div></fieldset>
+        <div class="field"><label for="absent"><span data-ko>빠질 예정인 날짜 (선택)</span><span data-en>Dates you already know you’ll miss (optional)</span></label><input type="text" id="absent" data-ph-ko="예: 1/16 학교 행사" data-ph-en="e.g. Jan 16, school trip"></div>
+        <p class="err" id="err3" role="alert"></p>
+      </div>
+
+      <!-- step 4 -->
+      <div class="astep" data-step="4" hidden>
+        <div class="sum" id="sum"></div>
+        <fieldset class="field"><legend><span data-ko>할인</span><span data-en>Discount</span></legend>
+          <div class="opts">
+            <label><input type="radio" name="disc" value="none" checked onchange="discType()"><span data-ko>해당 없음</span><span data-en>None</span></label>
+            <label><input type="radio" name="disc" value="school" onchange="discType()"><span data-ko>파트너 학교</span><span data-en>Partner school</span></label>
+            <label><input type="radio" name="disc" value="multi" onchange="discType()"><span data-ko>다문화가정</span><span data-en>Multicultural family</span></label>
+          </div></fieldset>
+        <div class="field" id="codeField" hidden>
+          <label for="code"><span data-ko>할인 코드</span><span data-en>Discount code</span></label>
+          <div class="code-row"><input type="text" id="code" autocomplete="off" data-ph-ko="예: YES-DEMO" data-ph-en="e.g. YES-DEMO"><button type="button" class="btn btn-ghost btn-sm" onclick="applyCode()"><span data-ko>적용</span><span data-en>Apply</span></button></div>
+          <p class="hint" id="codeHint"></p>
+          <p class="err" id="codeErr" role="alert"></p><p class="ok" id="codeOk" role="status"></p>
+        </div>
+        <fieldset class="field"><legend><span data-ko>결제 수단</span><span data-en>Payment method</span></legend>
+          <div class="opts" id="payOpts"></div></fieldset>
+        <div class="notice"><span data-ko>강좌가 개설되지 않으면 100% 환불합니다. 개인 사유 환불 기준은 [환불 규정 링크]에서 확인하세요.</span><span data-en>100% refund if the course does not open. See [refund policy] for refunds for personal reasons.</span></div>
+        <label class="check"><input type="checkbox" id="c4" required><span><span data-ko>[필수] 이용약관과 환불 규정을 확인했습니다.</span><span data-en>[Required] I have read the terms and refund policy.</span></span></label>
+        <p class="err" id="err4" role="alert"></p>
+      </div>
+
+      <!-- step 5 -->
+      <div class="astep" data-step="5" hidden>
+        <div class="done">
+          <span class="check-ic" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span>
+          <p class="big"><span data-ko>신청이 완료되었습니다</span><span data-en>Application complete</span></p>
+          <p id="doneText"></p>
+          <p class="tiny"><span data-ko>시안 페이지라 실제 결제는 일어나지 않았습니다.</span><span data-en>This is a prototype, so no payment was made.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dlg-foot">
+      <button type="button" class="btn btn-ghost" id="backBtn" onclick="prevStep()"><span data-ko>이전</span><span data-en>Back</span></button>
+      <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextStep()"></button>
+    </div>
+  </form>
+</dialog>
+
+<!-- SESSION DIALOG -->
+<dialog id="sessionDlg" aria-labelledby="sessTitle">
+  <form method="dialog" novalidate onsubmit="return false">
+    <div class="dlg-head"><h2 id="sessTitle"><span data-ko>학부모 설명회 예약</span><span data-en>Book an info session</span></h2>
+      <button type="button" class="dlg-close" aria-label="닫기" onclick="closeDlg('sessionDlg')">×</button></div>
+    <div class="dlg-body" id="sessBody">
+      <div class="field"><label for="sessSel"><span data-ko>설명회</span><span data-en>Session</span></label><select id="sessSel"></select></div>
+      <div class="field"><label for="rName"><span data-ko>성함</span><span data-en>Name</span> <span class="req">*</span></label><input type="text" id="rName" autocomplete="name"></div>
+      <div class="field"><label for="rEmail"><span data-ko>이메일 (접속 링크 발송)</span><span data-en>Email (we’ll send the link)</span> <span class="req">*</span></label><input type="email" id="rEmail" autocomplete="email"></div>
+      <div class="field"><label for="rQ"><span data-ko>미리 묻고 싶은 질문 (선택)</span><span data-en>Questions in advance (optional)</span></label><textarea id="rQ"></textarea></div>
+      <label class="check"><input type="checkbox" id="rC"><span><span data-ko>[필수] 설명회 안내를 위한 이름·이메일 수집에 동의합니다. 설명회 종료 후 [보유 기간] 뒤 삭제합니다.</span><span data-en>[Required] I agree to share my name and email for this session. Deleted [retention period] after the session.</span></span></label>
+      <p class="err" id="rErr" role="alert"></p>
+    </div>
+    <div class="dlg-foot"><span></span><button type="button" class="btn btn-primary" id="rBtn" onclick="bookSession()"><span data-ko>예약하기</span><span data-en>Book</span></button></div>
+  </form>
+</dialog>
+
+<!-- PARTNER DIALOG -->
+<dialog id="partnerDlg" aria-labelledby="partTitle">
+  <form method="dialog" novalidate onsubmit="return false">
+    <div class="dlg-head"><h2 id="partTitle"><span data-ko>파트너 학교 신청</span><span data-en>Partner School Application</span></h2>
+      <button type="button" class="dlg-close" aria-label="닫기" onclick="closeDlg('partnerDlg')">×</button></div>
+    <div class="dlg-body" id="partBody">
+      <div class="field"><label for="ps1"><span data-ko>학교명</span><span data-en>School name</span> <span class="req">*</span></label><input type="text" id="ps1"></div>
+      <div class="field"><label for="ps2"><span data-ko>학교 유형</span><span data-en>School type</span> <span class="req">*</span></label><select id="ps2"></select></div>
+      <div class="field"><label for="ps3"><span data-ko>담당자 성함</span><span data-en>Full name</span> <span class="req">*</span></label><input type="text" id="ps3" autocomplete="name"></div>
+      <div class="field"><label for="ps4"><span data-ko>직책</span><span data-en>Position</span> <span class="req">*</span></label><input type="text" id="ps4"></div>
+      <div class="field"><label for="ps5"><span data-ko>이메일</span><span data-en>Email</span> <span class="req">*</span></label><input type="email" id="ps5" autocomplete="email"></div>
+      <div class="field"><label for="ps6"><span data-ko>전화 (선택)</span><span data-en>Phone (optional)</span></label><input type="tel" id="ps6" data-ph-ko="국가번호 포함" data-ph-en="Please include the country code"></div>
+      <div class="field"><label for="ps7"><span data-ko>희망 패키지</span><span data-en>Package</span> <span class="req">*</span></label><select id="ps7"></select></div>
+      <div class="field"><label for="ps8"><span data-ko>예상 참여 학생 수 (선택)</span><span data-en>Expected number of students (optional)</span></label><input type="text" id="ps8" inputmode="numeric"></div>
+      <div class="field"><label for="ps9"><span data-ko>기타 문의 (선택)</span><span data-en>Other questions or comments (optional)</span></label><textarea id="ps9"></textarea></div>
+      <div class="notice"><ul>
+        <li><span data-ko>수집 주체: ㈜플래닛에코, KoreaPEN (YES Global 주최)</span><span data-en>Who collects it: PlanetEcho Co., Ltd. and KoreaPEN, the organizers of YES Global</span></li>
+        <li><span data-ko>수집 항목: 학교명, 학교 유형, 성함, 직책, 이메일, 전화(선택), 희망 패키지, 예상 인원, 문의 내용</span><span data-en>What we collect: school name and type, full name, position, email, phone (optional), package, expected students, comments</span></li>
+        <li><span data-ko>목적: 파트너십 안내 자료 발송, 문의 답변</span><span data-en>Why: to send partnership details and answer your questions</span></li>
+        <li><span data-ko>보유 기간: 제출 후 최대 1년, 이후 삭제</span><span data-en>How long: up to 1 year after you submit, then deleted</span></li>
+        <li><span data-ko>동의를 거부할 수 있으나, 이 경우 안내 자료를 보내드릴 수 없습니다.</span><span data-en>You may decline, but then we cannot send the details.</span></li>
+        <li><span data-ko>열람·정정·삭제 요청: info@koreapen.org</span><span data-en>To see, correct or delete: info@koreapen.org</span></li></ul></div>
+      <label class="check"><input type="checkbox" id="psC1"><span><span data-ko>[필수] 위와 같이 개인정보 수집·이용에 동의합니다.</span><span data-en>[Required] I agree to the collection and use of my personal information as described above.</span></span></label>
+      <label class="check"><input type="checkbox" id="psC2"><span><span data-ko>[필수] 파트너십 안내 자료 수신에 동의합니다.</span><span data-en>[Required] Yes, please send me the School Partnership details.</span></span></label>
+      <p class="err" id="psErr" role="alert"></p>
+    </div>
+    <div class="dlg-foot"><span></span><button type="button" class="btn btn-primary" id="psBtn" onclick="submitPartner()"><span data-ko>신청하기</span><span data-en>Submit application</span></button></div>
+  </form>
+</dialog>
+
+
+<script>
+/* ===== config (운영 시 서버 값으로 교체) ===== */
+const PRICE = 2200000;              // 부가세 포함
+const DISCOUNT_RATE = 0.20;
+const DEADLINE = new Date('2026-12-05T23:59:59+09:00');
+// 데모용 할인 코드. 실제 운영에서는 서버에서 검증합니다.
+const CODES = {
+  'YES-DEMO':  {type:'school', school:'데모중학교'},
+  'MULTI-DEMO':{type:'multi'}
+};
+
+let lang = 'ko';
+const t = (ko,en) => lang==='en' ? en : ko;
+const won = n => lang==='en' ? 'KRW ' + n.toLocaleString('en-US') : n.toLocaleString('ko-KR') + '원';
+
+/* ===== language ===== */
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.getElementById('lk').setAttribute('aria-pressed', l==='ko');
+  document.getElementById('le').setAttribute('aria-pressed', l==='en');
+  document.querySelectorAll('[data-ph-ko]').forEach(el => el.placeholder = el.getAttribute(l==='en'?'data-ph-en':'data-ph-ko'));
+  try{ localStorage.setItem('yesLang', l); }catch(e){}
+  buildOptions(); renderDeadline(); if(curStep) renderStep();
+}
+
+/* ===== deadline (seats are intentionally not shown) ===== */
+function renderDeadline(){
+  const days = Math.ceil((DEADLINE - new Date())/86400000);
+  const el = document.getElementById('deadline');
+  const st = document.getElementById('stickyText');
+  let msg;
+  if(days > 0) msg = t(`모집 마감 <strong>12월 5일(토)</strong>, ${days}일 남았습니다.`, `Applications close <strong>Sat, Dec 5</strong>, ${days} days left.`);
+  else msg = t('1기 모집이 마감되었습니다.', 'Applications for Cohort 1 are closed.');
+  el.innerHTML = msg; st.innerHTML = msg;
+}
+
+/* ===== tabs ===== */
+const tabs = [...document.querySelectorAll('[role=tab]')];
+function selectTab(tab){
+  tabs.forEach(x => { const on = x===tab; x.setAttribute('aria-selected', on); x.tabIndex = on?0:-1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; });
+}
+tabs.forEach((tab,i) => {
+  tab.addEventListener('click', () => selectTab(tab));
+  tab.addEventListener('keydown', e => {
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ e.preventDefault(); const n = tabs[(i + (e.key==='ArrowRight'?1:-1) + tabs.length) % tabs.length]; selectTab(n); n.focus(); }
+  });
+});
+
+/* ===== sticky bar after 25% scroll ===== */
+const sticky = document.getElementById('sticky');
+window.addEventListener('scroll', () => {
+  const show = window.scrollY > (document.body.scrollHeight - innerHeight) * 0.25;
+  sticky.classList.toggle('show', show); sticky.setAttribute('aria-hidden', !show);
+  sticky.querySelectorAll('a,button').forEach(b => b.tabIndex = show ? 0 : -1);
+}, {passive:true});
+
+/* ===== dynamic option lists ===== */
+function radios(id, name, list, type='radio'){
+  const box = document.getElementById(id); const prev = [...box.querySelectorAll('input:checked')].map(i=>i.value);
+  box.innerHTML = list.map(([v,ko,en]) => `<label><input type="${type}" name="${name}" value="${v}" ${prev.includes(v)?'checked':''}>${t(ko,en)}</label>`).join('');
+}
+function select(id, list){
+  const s = document.getElementById(id); const v = s.value;
+  s.innerHTML = list.map(([val,ko,en]) => `<option value="${val}">${t(ko,en)}</option>`).join(''); if(v) s.value = v;
+}
+function buildOptions(){
+  select('sGrade', [['', '선택하세요', 'Choose one'],['m1','중1','Grade 7'],['m2','중2','Grade 8'],['m3','중3','Grade 9'],['h1','고1','Grade 10'],['h2','고2','Grade 11'],['h3','고3','Grade 12'],['out','학교 밖 청소년','Out-of-school youth']]);
+  radios('engOpts','eng',[['1','수업은 이해하지만 말하기는 어려움','I understand class but find speaking hard'],['2','간단한 대화와 발표 가능','I can chat and give short talks'],['3','토론과 발표에 익숙함','I’m comfortable debating and presenting'],['4','영어가 가장 편함','English is my strongest language']]);
+  radios('aiOpts','ai',[['0','거의 안 씀','Rarely'],['1','가끔','Sometimes'],['2','거의 매일','Almost daily']]);
+  radios('intOpts','int',[['edu','교육','Education'],['env','환경','Environment'],['health','건강','Health'],['fashion','패션·뷰티','Fashion & beauty'],['game','게임·엔터','Games & media'],['finance','금융','Finance'],['social','사회문제','Social impact']],'checkbox');
+  const region = document.querySelector('input[name=region]:checked')?.value || 'kr';
+  const pays = region==='intl'
+    ? [['stripe','해외 카드 (Stripe)','International card (Stripe)'],['paypal','PayPal','PayPal'],['card','국내 카드·계좌이체','Korean card or bank transfer']]
+    : [['card','카드·계좌이체','Card or bank transfer'],['easy','카카오페이·네이버페이','KakaoPay or Naver Pay'],['stripe','해외 카드 (Stripe)','International card (Stripe)'],['paypal','PayPal','PayPal']];
+  radios('payOpts','pay',pays);
+  if(!document.querySelector('input[name=pay]:checked')) document.querySelector('#payOpts input').checked = true;
+  select('sessSel',[['s1','11월 14일(토) 10:00, 영어','Sat, Nov 14, 10:00 KST (English)'],['s2','11월 18일(수) 20:30, 한국어','Wed, Nov 18, 20:30 KST (Korean)'],['s3','11월 21일(토) 10:00, 영어','Sat, Nov 21, 10:00 KST (English)']]);
+  select('ps2',[['','선택하세요','Choose one'],['intl','국제학교','International school'],['school','중·고등학교','Middle or high school'],['alt','대안학교','Alternative school'],['org','학교 밖 청소년 기관','Out-of-school youth organization']]);
+  select('ps7',[['','선택하세요','Choose one'],['partner','Partner','Partner'],['sponsor','Sponsor','Sponsor'],['premier','Premier Sponsor','Premier Sponsor'],['tbd','상담 후 결정','Decide after a call']]);
+}
+document.addEventListener('change', e => { if(e.target.name==='region') buildOptions(); });
+function toggleSchool(){ document.getElementById('schoolField').hidden = document.getElementById('sGrade').value==='out'; }
+
+/* ===== dialogs ===== */
+function closeDlg(id){ document.getElementById(id).close(); }
+function openApply(){ curStep = 1; discount = null; renderStep(); document.getElementById('applyDlg').showModal(); }
+function openSession(id){ resetBody('sessBody','rBtn'); buildOptions(); document.getElementById('sessSel').value = id; document.getElementById('sessionDlg').showModal(); }
+function openPartner(){ resetBody('partBody','psBtn'); document.getElementById('partnerDlg').showModal(); }
+const saved = {};
+function resetBody(bodyId, btnId){ const b = document.getElementById(bodyId); if(saved[bodyId]){ b.innerHTML = saved[bodyId]; buildOptions(); setLang(lang); } else saved[bodyId] = b.innerHTML; document.getElementById(btnId).hidden = false; }
+
+/* ===== apply funnel ===== */
+let curStep = 0, discount = null;
+const steps = [
+  ['보호자 정보','Parent details'],['학생 정보·동의','Student details and consent'],['사전설문','Pre-survey'],['결제','Payment'],['완료','Done']
+];
+function renderStep(){
+  document.querySelectorAll('.astep').forEach(s => s.hidden = +s.dataset.step !== curStep);
+  document.querySelectorAll('.progress i').forEach((b,i) => b.classList.toggle('on', i < curStep));
+  document.getElementById('stepLabel').textContent = `${curStep}/5 · ${t(...steps[curStep-1])}`;
+  const back = document.getElementById('backBtn'), next = document.getElementById('nextBtn');
+  back.style.visibility = (curStep>1 && curStep<5) ? 'visible' : 'hidden';
+  if(curStep===4){ renderSum(); next.textContent = t(`${won(total())} 결제하기`, `Pay ${won(total())}`); }
+  else if(curStep===5) next.textContent = t('닫기','Close');
+  else next.textContent = t('다음','Next');
+}
+function err(id,msg){ document.getElementById(id).textContent = msg||''; return !msg; }
+const val = id => document.getElementById(id).value.trim();
+const emailOk = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+function validate(){
+  if(curStep===1){
+    if(!val('pName')||!val('pPhone')) return err('err1', t('보호자 성함과 휴대폰을 입력하세요.','Enter the parent’s name and mobile number.'));
+    if(!emailOk(val('pEmail'))) return err('err1', t('이메일 형식을 확인하세요. 예: name@example.com','Check the email format, e.g. name@example.com.'));
+    return err('err1');
+  }
+  if(curStep===2){
+    if(!val('sName')||!val('sNameEn')||!val('sGrade')) return err('err2', t('학생 이름, 영문 이름, 학년을 입력하세요.','Enter the student’s name, English name and grade.'));
+    if(val('sGrade')!=='out' && !val('sSchool')) return err('err2', t('재학 중인 학교를 입력하세요.','Enter the current school.'));
+    if(!document.getElementById('c1').checked || !document.getElementById('c2').checked) return err('err2', t('필수 동의 두 항목에 체크하세요.','Check both required consents.'));
+    return err('err2');
+  }
+  if(curStep===3){
+    if(!document.querySelector('input[name=eng]:checked')) return err('err3', t('영어 수준을 하나 고르세요.','Choose your English level.'));
+    if(val('motive').length < 20) return err('err3', t('참가 이유를 영어로 2~3문장 써 주세요.','Write 2–3 sentences on why you want to join.'));
+    return err('err3');
+  }
+  if(curStep===4){
+    if(!document.getElementById('c4').checked) return err('err4', t('이용약관과 환불 규정 확인에 체크하세요.','Confirm you have read the terms and refund policy.'));
+    return err('err4');
+  }
+  return true;
+}
+function nextStep(){
+  if(curStep===5){ closeDlg('applyDlg'); return; }
+  if(!validate()) return;
+  if(curStep===4){
+    document.getElementById('doneText').textContent = t(
+      `${val('pEmail')}로 확인 메일과 개강 안내를 보내드립니다. 12월 19일 TIPS타운에서 만나요.`,
+      `We’ll send a confirmation and course details to ${val('pEmail')}. See you at TIPS Town on December 19.`);
+  }
+  curStep++; renderStep(); document.querySelector('#applyDlg .dlg-body').scrollTop = 0;
+}
+function prevStep(){ if(curStep>1){ curStep--; renderStep(); } }
+
+/* ===== discount logic: one discount only, 20% ===== */
+function total(){ return discount ? Math.round(PRICE*(1-DISCOUNT_RATE)) : PRICE; }
+function discType(){
+  const v = document.querySelector('input[name=disc]:checked').value;
+  document.getElementById('codeField').hidden = v==='none';
+  document.getElementById('codeHint').textContent = v==='multi'
+    ? t('증빙 서류 확인 후 운영팀이 보낸 코드를 입력하세요. 코드가 없으면 info@koreapen.org로 문의하세요.','Enter the code our team sent after checking your documents. No code yet? Email info@koreapen.org.')
+    : t('학교에서 받은 파트너 학교 코드를 입력하세요.','Enter the partner code from your school.');
+  if(v==='none'){ discount = null; document.getElementById('code').value=''; err('codeErr'); document.getElementById('codeOk').textContent=''; }
+  renderStep();
+}
+function applyCode(){
+  const type = document.querySelector('input[name=disc]:checked').value;
+  const code = val('code').toUpperCase(); const c = CODES[code];
+  document.getElementById('codeOk').textContent = ''; discount = null;
+  if(!c || c.type!==type){ err('codeErr', t('사용할 수 없는 코드입니다. 코드와 할인 유형을 확인하세요.','This code can’t be used. Check the code and discount type.')); renderStep(); return; }
+  if(new Date() > DEADLINE){ err('codeErr', t('코드 사용 기한(모집 마감일)이 지났습니다.','This code expired with the application deadline.')); renderStep(); return; }
+  err('codeErr'); discount = {code, ...c};
+  let msg = t('20% 할인이 적용되었습니다.','20% discount applied.');
+  if(c.type==='school' && c.school !== val('sSchool')) msg += ' ' + t('입력한 학교명과 코드의 학교가 달라, 운영팀 확인 후 최종 적용됩니다.','The school on your form doesn’t match this code, so our team will confirm it.');
+  document.getElementById('codeOk').textContent = msg; renderStep();
+}
+function renderSum(){
+  const base = PRICE, d = discount ? base - total() : 0, supply = Math.round(total()/1.1);
+  document.getElementById('sum').innerHTML =
+    `<div><span>${t('YES Global 기초 1기 수강료','Basics, Cohort 1 tuition')}</span><span>${won(base)}</span></div>` +
+    (d ? `<div class="minus"><span>${t('할인 20%','20% discount')} (${discount.code})</span><span>−${won(d)}</span></div>` : '') +
+    `<div class="tot"><span>${t('결제 금액','Total')}</span><span>${won(total())}</span></div>` +
+    `<div style="font-size:12.5px;color:var(--muted)"><span>${t('공급가액','Before VAT')} ${won(supply)} + ${t('부가세','VAT')} ${won(total()-supply)}</span><span></span></div>`;
+}
+
+/* ===== session booking ===== */
+function bookSession(){
+  if(!val('rName') || !emailOk(val('rEmail'))) return err('rErr', t('성함과 이메일을 확인하세요.','Check your name and email.'));
+  if(!document.getElementById('rC').checked) return err('rErr', t('필수 동의에 체크하세요.','Check the required consent.'));
+  const s = document.getElementById('sessSel'); const label = s.options[s.selectedIndex].text;
+  document.getElementById('sessBody').innerHTML = `<div class="done"><p class="big">${t('예약되었습니다','You’re booked')}</p><p>${t(`${label} 설명회 접속 링크를 ${val('rEmail')}로 보내드립니다.`, `We’ll email the link for ${label} to ${val('rEmail')}.`)}</p><p class="tiny">${t('시안 페이지라 실제 예약은 되지 않았습니다.','Prototype: no booking was made.')}</p></div>`;
+  document.getElementById('rBtn').hidden = true;
+}
+
+/* ===== partner application ===== */
+function submitPartner(){
+  if(!val('ps1')||!val('ps2')||!val('ps3')||!val('ps4')||!val('ps7')) return err('psErr', t('필수 항목을 모두 입력하세요.','Fill in all required fields.'));
+  if(!emailOk(val('ps5'))) return err('psErr', t('이메일 형식을 확인하세요.','Check the email format.'));
+  if(!document.getElementById('psC1').checked || !document.getElementById('psC2').checked) return err('psErr', t('필수 동의 두 항목에 체크하세요.','Check both required consents.'));
+  document.getElementById('partBody').innerHTML = `<div class="done"><p class="big">${t('신청이 접수되었습니다','Application received')}</p><p>${t('패키지 안내서를 메일로 보내드렸습니다. 3영업일 안에 담당자가 연락드립니다.','We’ve emailed the package guide. We’ll contact you within 3 business days.')}</p><p class="tiny">${t('시안 페이지라 실제로 접수되지는 않았습니다.','Prototype: nothing was submitted.')}</p></div>`;
+  document.getElementById('psBtn').hidden = true;
+}
+
+/* ===== init ===== */
+let initial = 'ko';
+try{ initial = localStorage.getItem('yesLang') || (navigator.language.startsWith('ko') ? 'ko' : 'en'); }catch(e){}
+setLang(initial);
+setInterval(renderDeadline, 60000);
+</script>
+<script>
+const menuBtns=[...document.querySelectorAll('.menu > li > button')];
+function closeMegas(except){menuBtns.forEach(b=>{if(b!==except){b.setAttribute('aria-expanded','false');document.getElementById(b.getAttribute('aria-controls')).hidden=true;}});}
+menuBtns.forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const open=b.getAttribute('aria-expanded')==='true';closeMegas(b);b.setAttribute('aria-expanded',String(!open));document.getElementById(b.getAttribute('aria-controls')).hidden=open;}));
+document.addEventListener('click',e=>{if(!e.target.closest('.menu'))closeMegas();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMegas();});
+document.querySelectorAll('.mega a').forEach(a=>a.addEventListener('click',()=>{closeMegas();document.getElementById('menu').classList.remove('open');document.getElementById('menuBtn').setAttribute('aria-expanded','false');}));
+function toggleMenu(){const m=document.getElementById('menu'),b=document.getElementById('menuBtn');const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);}
+const led=document.getElementById('ledger');
+if('IntersectionObserver' in window){new IntersectionObserver((es,o)=>{es.forEach(en=>{if(en.isIntersecting){led.classList.add('go');o.disconnect();}})},{threshold:.4}).observe(led);}else{led.classList.add('go');}
+</script>
+</body>
+</html>

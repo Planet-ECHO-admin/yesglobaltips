@@ -640,10 +640,6 @@ fieldset{border:0}
   <span data-ko>YES Global 기초 1기 모집 중, 12월 5일(토) 마감 · <a href="#contact-view">학부모 설명회 11월 18일·21일</a></span>
   <span data-en>Basics Cohort 1 now enrolling, closes Sat, Dec 5 · <a href="#contact-view">Parent info sessions Nov 18 &amp; 21</a></span>
 </div>
-<div class="proto" role="note">
-  <span data-ko>시안 페이지입니다. 신청·결제는 실제로 처리되지 않으며, 입력한 정보는 저장되지 않습니다.</span>
-  <span data-en>Prototype page. Applications and payments are not processed, and nothing you type is saved.</span>
-</div>
 
 <header>
   <div class="wrap nav">
@@ -654,7 +650,7 @@ fieldset{border:0}
         <button type="button" id="le" aria-pressed="false" onclick="setLang('en')">EN</button>
         <button type="button" id="lk" aria-pressed="true" onclick="setLang('ko')" lang="ko">한국어</button>
       </div>
-      <a class="btn btn-primary btn-sm nav-apply" href="#lead"><span data-ko>상담 신청</span><span data-en>Contact us</span></a>
+      <a class="btn btn-primary btn-sm nav-apply" href="https://forms.gle/NpJp3ipddoKf4Htt6" target="_blank" rel="noopener"><span data-ko>상담 신청</span><span data-en>Contact us</span></a>
       <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" onclick="toggleMenu()"><span data-ko>메뉴</span><span data-en>Menu</span></button>
     </div>
   </div>
@@ -674,7 +670,7 @@ fieldset{border:0}
         <p class="hero-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span><span data-ko>실제 돈은 쓰지 않습니다. 팀 회사는 PEN Worldwide 네트워크(40개국)에 정식 등록됩니다.</span><span data-en>No real money at risk. Each team’s company is officially registered in the PEN Worldwide network (40 countries).</span></span></p>
         <div class="actions">
           <a class="btn btn-primary" href="#contact-view"><span data-ko>학부모 설명회 신청</span><span data-en>Join a parent info session</span></a>
-          <a class="btn btn-secondary" href="#lead"><span data-ko>상담 연락처 남기기</span><span data-en>Request a call</span></a>
+          <a class="btn btn-secondary" href="https://forms.gle/NpJp3ipddoKf4Htt6" target="_blank" rel="noopener"><span data-ko>상담 연락처 남기기</span><span data-en>Request a call</span></a>
         </div>
         <p class="kakao-line"><a href="#" class="kakao-link" data-kakao><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg><span data-ko>카카오톡 문의</span><span data-en>Chat on KakaoTalk</span></a><span class="kakao-id">@yesglobal_tips</span></p>
         <div class="hero-benefits">
@@ -1142,21 +1138,12 @@ fieldset{border:0}
           <p class="small kakao-msg" role="status"></p>
         </div>
       </div>
-      <form class="lead-form" id="lead" novalidate onsubmit="submitLead(event)">
+      <div class="lead-form" id="lead">
         <h3 class="sub-h"><span data-ko>상담 연락처 남기기</span><span data-en>Request a call</span></h3>
-        <div id="leadBody">
-          <div class="field"><label for="lName"><span data-ko>학부모 성함</span><span data-en>Parent name</span> <span class="req">*</span></label><input type="text" id="lName" autocomplete="name"></div>
-          <div class="field"><label for="lPhone"><span data-ko>휴대폰</span><span data-en>Mobile</span> <span class="req">*</span></label><input type="tel" id="lPhone" autocomplete="tel" data-ph-ko="010-0000-0000" data-ph-en="+82 10 0000 0000"></div>
-          <div class="field"><label for="lEmail"><span data-ko>이메일 (선택)</span><span data-en>Email (optional)</span></label><input type="email" id="lEmail" autocomplete="email"></div>
-          <div class="field"><label for="lGrade"><span data-ko>자녀 학년</span><span data-en>Child’s grade</span> <span class="req">*</span></label><select id="lGrade"></select></div>
-          <div class="field"><label for="lSchool"><span data-ko>재학 학교 (선택)</span><span data-en>School (optional)</span></label><input type="text" id="lSchool"></div>
-          <div class="field"><label for="lSession"><span data-ko>설명회 참석</span><span data-en>Info session</span></label><select id="lSession"></select></div>
-          <div class="field"><label for="lMsg"><span data-ko>궁금한 점 (선택)</span><span data-en>Questions (optional)</span></label><textarea id="lMsg"></textarea></div>
-          <label class="check"><input type="checkbox" id="lC"><span><span data-ko>[필수] 상담 연락을 위한 성함·연락처 수집에 동의합니다. 모집 종료 후 6개월 안에 삭제합니다.</span><span data-en>[Required] I agree to share my name and contact details so you can reach me. Deleted within 6 months after enrollment closes.</span></span></label>
-          <p class="err" id="lErr" role="alert"></p>
-          <button type="submit" class="btn btn-primary" id="lBtn"><span data-ko>연락처 남기기</span><span data-en>Send</span></button>
-        </div>
-      </form>
+        <p class="small" style="margin:8px 0 20px"><span data-ko>성함과 연락처, 자녀 학년, 설명회 참석 여부를 남겨 주시면 담당자가 1~2일 안에 직접 연락드립니다. 설명회 참석 신청도 이 설문지에서 함께 받습니다.</span><span data-en>Leave your name, contact details, your child’s grade and whether you’ll join an info session. We’ll get in touch within one or two days. You can also sign up for an info session here.</span></p>
+        <a class="btn btn-primary" href="https://forms.gle/NpJp3ipddoKf4Htt6" target="_blank" rel="noopener"><span data-ko>상담 신청서 작성하기</span><span data-en>Open the request form</span></a>
+        <p class="small" style="margin-top:12px"><span data-ko>구글 설문지가 새 창으로 열립니다. 1분이면 됩니다.</span><span data-en>Opens a Google Form in a new tab. Takes about a minute.</span></p>
+      </div>
     </div>
   </div>
 </section>
@@ -1512,8 +1499,6 @@ function buildOptions(){
   const region = document.querySelector('input[name=region]:checked')?.value || 'kr';
 
   select('sessSel',[['s2','11월 18일(수) 20:30, 한국어','Wed, Nov 18, 20:30 KST (Korean)'],['s3','11월 21일(토) 10:00, 영어','Sat, Nov 21, 10:00 KST (English)']]);
-  select('lGrade',[['','선택하세요','Choose one'],['m1','중1','Grade 7'],['m2','중2','Grade 8'],['m3','중3','Grade 9'],['h1','고1','Grade 10'],['h2','고2','Grade 11'],['h3','고3','Grade 12'],['out','학교 밖 청소년','Out-of-school youth']]);
-  select('lSession',[['none','개별 상담을 원합니다','I’d prefer a one-to-one call'],['s2','11월 18일(수) 20:30 설명회 참석','Attending Wed, Nov 18 (Korean)'],['s3','11월 21일(토) 10:00 설명회 참석','Attending Sat, Nov 21 (English)']]);
   select('ps2',[['','선택하세요','Choose one'],['intl','국제학교','International school'],['school','중·고등학교','Middle or high school'],['alt','대안학교','Alternative school'],['org','학교 밖 청소년 기관','Out-of-school youth organization']]);
   select('ps7',[['','선택하세요','Choose one'],['partner','Partner','Partner'],['sponsor','Sponsor','Sponsor'],['premier','Premier Sponsor','Premier Sponsor'],['tbd','상담 후 결정','Decide after a call']]);
 }
@@ -1522,9 +1507,14 @@ function toggleSchool(){ document.getElementById('schoolField').hidden = documen
 
 /* ===== dialogs ===== */
 function closeDlg(id){ document.getElementById(id).close(); }
-function openApply(){ curStep = 1; discount = null; renderStep(); document.getElementById('applyDlg').showModal(); }
-function openSession(id){ resetBody('sessBody','rBtn'); buildOptions(); document.getElementById('sessSel').value = id; document.getElementById('sessionDlg').showModal(); }
-function openPartner(){ resetBody('partBody','psBtn'); document.getElementById('partnerDlg').showModal(); }
+/* 신청은 구글 설문지로 받습니다 */
+const FORM_APPLY = 'https://forms.gle/w5Zfd3cvh5Ywzh6X9';
+const FORM_PARTNER = 'https://forms.gle/w5Zfd3cvh5Ywzh6X9';
+const FORM_LEAD = 'https://forms.gle/NpJp3ipddoKf4Htt6';
+function openForm(u){ const w = window.open(u, '_blank', 'noopener'); if(!w) location.href = u; }
+function openApply(){ openForm(FORM_APPLY); }
+function openSession(id){ openForm(FORM_LEAD); }
+function openPartner(){ openForm(FORM_PARTNER); }
 const saved = {};
 function resetBody(bodyId, btnId){ const b = document.getElementById(bodyId); if(saved[bodyId]){ b.innerHTML = saved[bodyId]; buildOptions(); setLang(lang); } else saved[bodyId] = b.innerHTML; document.getElementById(btnId).hidden = false; }
 

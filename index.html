@@ -281,6 +281,35 @@ html[lang="en"] .hero-pill{text-transform:uppercase;font-size:12px}
 .ptable td{color:var(--muted)}
 .flinks a{color:var(--muted)}
 .flinks b{font-weight:700;color:var(--ink)}
+.yes-word{font-size:56px;letter-spacing:-.02em}
+.yes-word .yl{color:var(--green)}
+.vm{margin-top:48px;display:grid;grid-template-columns:1fr 1.4fr;gap:56px;border-top:2px solid var(--ink);padding-top:28px}
+.vm h3{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.vm p.vm-big{font-size:30px;line-height:1.35;font-weight:700;color:var(--ink)}
+.vm p{font-size:17px;color:var(--muted);line-height:1.75}
+.values{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.values > div{padding:24px 28px 0 0}
+.values > div + div{padding-left:28px;border-left:1px solid var(--line)}
+.v-k{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green)}
+.values h3{font-size:20px;margin:6px 0 8px}
+.values p{font-size:15.5px;color:var(--muted)}
+.echo{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.echo li{background:var(--surface);border-radius:var(--r-lg);padding:22px}
+.echo b{display:block;font-size:44px;line-height:1;color:var(--primary)}
+.echo .e-n{display:block;margin-top:8px;font-size:18px;font-weight:700;color:var(--ink)}
+.echo .e-d{display:block;margin-top:6px;font-size:15px;color:var(--muted);line-height:1.6}
+.quad-wrap{margin-top:56px}
+.quad-lead{max-width:760px;font-size:16px}
+.quad{margin-top:20px;display:grid;grid-template-columns:90px 1fr 1fr;gap:10px;max-width:760px}
+.qh{font-size:13px;font-weight:700;color:var(--muted);text-align:center}
+.qv{font-size:13px;font-weight:700;color:var(--muted);display:flex;align-items:center}
+.qc{border:1px solid var(--line);border-radius:var(--r-md);padding:16px}
+.qc b{display:block;font-size:15px;color:var(--ink)}
+.qc span{display:block;margin-top:4px;font-size:14px;color:var(--muted)}
+.qc-on{background:var(--primary);border-color:var(--primary)}
+.qc-on b,.qc-on span{color:#fff}
+@media (max-width:900px){.vm,.values{grid-template-columns:1fr}.values > div + div{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:20px}.values > div{padding-bottom:20px}.echo{grid-template-columns:1fr 1fr}.yes-word{font-size:40px}}
+@media (max-width:620px){.echo{grid-template-columns:1fr}.quad{grid-template-columns:56px 1fr 1fr}}
 /* proof */
 .proof{padding:72px 0}
 .proof-grid{display:grid;grid-template-columns:repeat(3,1fr) 1.4fr;gap:40px;align-items:start}
@@ -785,7 +814,7 @@ fieldset{border:0}
   <div class="wrap">
     <h2><span data-ko>더 알아보기</span><span data-en>Explore</span></h2>
     <div class="explore">
-      <a href="#program-view"><b><span data-ko>13주 프로그램</span><span data-en>The 13-week program</span></b><span><span data-ko>무엇을 배우고, 어떻게 게임처럼 진행되나요</span><span data-en>What you learn, and how mock funding works</span></span></a>
+      <a href="#program-view"><b><span data-ko>13주 프로그램</span><span data-en>The 13-week program</span></b><span><span data-ko>YES의 비전과 미션, 무엇을 배우고 어떻게 진행되나요</span><span data-en>Our vision and mission, what you learn, and how mock funding works</span></span></a>
       <a href="#results-view"><b><span data-ko>결과물과 소감</span><span data-en>Results &amp; stories</span></b><span><span data-ko>13주 후 손에 남는 것, 참여 학생·학부모 소감</span><span data-en>What you leave with, and what students and parents say</span></span></a>
       <a href="#people-view"><b><span data-ko>코치진</span><span data-en>Coaches &amp; advisors</span></b><span><span data-ko>창업가·글로벌 전문가 코치와 Advisory Board 고문단</span><span data-en>Founder and global-expert coaches, plus our advisory board</span></span></a>
       <a href="#join-view"><b><span data-ko>장소와 참가 방법</span><span data-en>Venue &amp; how to join</span></b><span><span data-ko>TIPS타운 장소, 수강료와 할인, 신청 순서, 자주 묻는 질문</span><span data-en>TIPS Town, tuition and discounts, steps and FAQ</span></span></a>
@@ -795,6 +824,43 @@ fieldset{border:0}
 </section>
 </div>
 <div class="view" id="program-view" hidden>
+<!-- VISION -->
+<section id="vision">
+  <div class="wrap">
+    <p class="kicker"><span data-ko>비전과 미션</span><span data-en>Vision &amp; mission</span></p>
+    <h2 class="yes-word"><span class="yl">Y</span>outh <span class="yl">E</span>CHO <span class="yl">S</span>tartup</h2>
+    <p class="lead" style="margin-top:16px"><span data-ko>YES는 Youth ECHO Startup의 약자입니다. 당신의 아이디어가 세상에 울려 퍼지게(ECHO) 하는 청소년 창업 프로그램입니다.</span><span data-en>YES stands for Youth ECHO Startup: a startup program that helps young people make their ideas echo across the world.</span></p>
+    <div class="vm">
+      <div><h3><span data-ko>비전</span><span data-en>Vision</span></h3><p class="vm-big"><span data-ko>일자리를 찾는 사람이 아니라, 일자리를 만드는 사람으로.</span><span data-en>Not job seekers, but job makers.</span></p></div>
+      <div><h3><span data-ko>미션</span><span data-en>Mission</span></h3><p><span data-ko>AI가 신입·주니어 업무를 가장 먼저 대신하는 시대에는 정해진 답을 찾는 훈련만으로는 부족합니다. YES Global은 학생이 스스로 질문을 세우고, AI와 팀과 함께 아이디어를 프로토타입과 MVP로 만들고, 40개국 네트워크와 강남 TIPS타운의 투자 무대에서 그 가치를 증명하도록 돕습니다.</span><span data-en>When AI takes over entry-level work first, practicing to find the right answer is no longer enough. YES Global helps students ask their own questions, turn ideas into a prototype and an MVP with AI and their team, and prove the value on a 40-country network and on the investor stage at TIPS Town, Gangnam.</span></p></div>
+    </div>
+    <div class="values">
+      <div><p class="v-k">I · <span data-ko>나로부터</span><span data-en>From within</span></p><h3><span data-ko>스스로 질문하고 만들기</span><span data-en>Ask your own questions, then build</span></h3><p><span data-ko>정해진 답이 아니라 나만의 문제를 찾고 제대로 묻는 법을 배웁니다. 질문의 깊이는 PIQ로 측정합니다.</span><span data-en>Find your own problem instead of chasing given answers, and learn to ask the right questions. PIQ measures how deep your thinking goes.</span></p></div>
+      <div><p class="v-k">Team · <span data-ko>함께</span><span data-en>Together</span></p><h3><span data-ko>AI를 7번째 팀원으로</span><span data-en>AI as the 7th teammate</span></h3><p><span data-ko>4~6명이 한 회사를 세우고 AI와 함께 아이디어를 뾰족하게 다듬습니다. 역할을 나누며 창업가 역량과 나의 진로를 발견합니다.</span><span data-en>Four to six students form one company and sharpen their idea with an AI co-pilot, discovering founder skills and their own direction along the way.</span></p></div>
+      <div><p class="v-k">World · <span data-ko>세계로</span><span data-en>Global</span></p><h3><span data-ko>세계 무대에서 증명하기</span><span data-en>Prove it on a global stage</span></h3><p><span data-ko>40개국 실습기업과 영어로 거래하고, 마지막 날 현직 투자자 앞에서 피칭합니다. 아이디어는 세상에 닿을 때 혁신이 됩니다.</span><span data-en>Trade in English with practice enterprises in 40 countries and pitch to real investors on the final day. An idea becomes innovation when it reaches the world.</span></p></div>
+    </div>
+    <h3 class="grp"><span data-ko>ECHO 프로세스: 아이디어가 세상에 울려 퍼지는 네 단계</span><span data-en>The ECHO process: four steps to make an idea echo</span></h3>
+    <ol class="echo">
+      <li><b>E</b><span class="e-n">Expose</span><span class="e-d"><span data-ko>주변의 불편함과 문제를 드러냅니다. 관찰하고, 묻고, 기록합니다.</span><span data-en>Surface real problems around you by observing, asking and noting.</span></span></li>
+      <li><b>C</b><span class="e-n">Confirm</span><span class="e-d"><span data-ko>고객 인터뷰와 데이터로 그 문제가 진짜인지 확인합니다.</span><span data-en>Check that the problem is real with customer interviews and data.</span></span></li>
+      <li><b>H</b><span class="e-n">Hone</span><span class="e-d"><span data-ko>AI와 함께 프로토타입을 만들고, 피드백으로 MVP까지 다듬습니다.</span><span data-en>Build a prototype with AI and refine it into an MVP through feedback.</span></span></li>
+      <li><b>O</b><span class="e-n">Originate</span><span class="e-d"><span data-ko>세상에 내놓습니다. 40개국에 팔고, 투자자 앞에서 피칭합니다.</span><span data-en>Launch it: sell across 40 countries and pitch to investors.</span></span></li>
+    </ol>
+    <div class="quad-wrap">
+      <p class="small quad-lead"><span data-ko>왜 AI와 함께하는 팀 창업일까요? AI 시대에 사람만의 힘이 가장 크게 남는 곳은 "함께, 정답이 없는 문제를 푸는 일"입니다.</span><span data-en>Why team startups with AI? In the age of AI, people stay most irreplaceable when they work together on problems with no single answer.</span></p>
+      <div class="quad">
+        <span class="qx"></span><span class="qh"><span data-ko>정답 있음</span><span data-en>One right answer</span></span><span class="qh"><span data-ko>정답 없음</span><span data-en>No single answer</span></span>
+        <span class="qv"><span data-ko>혼자</span><span data-en>Solo</span></span>
+        <div class="qc"><b><span data-ko>AI가 대신함</span><span data-en>AI replaces</span></b><span><span data-ko>데이터 입력, 단순 회계</span><span data-en>Data entry, basic bookkeeping</span></span></div>
+        <div class="qc"><b><span data-ko>AI가 더 잘함</span><span data-en>AI does it better</span></b><span><span data-ko>리서치, 카피, 코딩</span><span data-en>Research, copywriting, coding</span></span></div>
+        <span class="qv"><span data-ko>함께</span><span data-en>Team</span></span>
+        <div class="qc"><b><span data-ko>AI가 대신함</span><span data-en>AI replaces</span></b><span><span data-ko>정형 응대, 매뉴얼 업무</span><span data-en>Scripted support, routine work</span></span></div>
+        <div class="qc qc-on"><b><span data-ko>사람만의 힘 · YES가 키우는 힘</span><span data-en>Human edge · what YES builds</span></b><span><span data-ko>AI를 7번째 팀원으로 둔 팀 창업</span><span data-en>Team startups with AI as the 7th teammate</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- 3 WHY -->
 <section>
   <div class="wrap why">
@@ -1354,6 +1420,7 @@ fieldset{border:0}
   <div class="wrap">
     <div class="fcols">
       <div><h3>YES Global with TIPS Town</h3>
+        <p class="operator"><span data-ko>YES = Youth ECHO Startup · 당신의 아이디어가 세상에 울려 퍼지게</span><span data-en>YES = Youth ECHO Startup · Make your idea echo across the world</span></p>
         <p class="operator"><span data-ko><b>운영</b> ㈜플래닛에코 · PEN Worldwide 한국본부(KoreaPEN)</span><span data-en><b>Run by</b> PlanetEcho Co., Ltd. · KoreaPEN, the Korean National Center of PEN Worldwide</span></p>
         <p class="operator"><span data-ko><b>문의</b></span><span data-en><b>Contact</b></span> <a href="#" data-kakao>카카오톡 @yesglobal_tips</a> · <a href="mailto:mjkim@planetecho.xyz">mjkim@planetecho.xyz</a></p>
         <ul class="orglinks"><li><a href="https://www.planetecho.xyz" target="_blank" rel="noopener">www.planetecho.xyz</a></li></ul>
